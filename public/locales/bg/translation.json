@@ -1,0 +1,45 @@
+{
+    "navbar": {
+        "home": "Начало",
+        "about": "За мен",
+        "projects": "Проекти",
+        "contacts": "Контакти"
+    },
+    "footer": {
+        "phone": "+359 8888888",
+        "email": {
+            "value1": "trayan",
+            "value2": "stefanov95"
+        },
+        "credits": "Проектиран, разработен и пуснат в експлоатация от Траян Стефанов",
+        "social": "Socials",
+        "social-links": {
+            "linkedin": "https://www.linkedin.com/in/trayanstefanov",
+            "github": "http://www.github.com/TrayanStefanov"
+        }
+    },
+    "language": {
+        "bg": "Български",
+        "en": "Английски"
+    },
+    "contacts": {
+        "title": {
+            "value1": "Искате да се",
+            "value2": "свържете",
+            "value3": "с мен"
+        },
+        "phone": "+359 8888888",
+        "phoneLabel": "Обадете ми се между 9:00 и 18:00",
+        "viber": "+359 8888888",
+        "viberLabel": "Пишите ми във Viber",
+        "email": {
+            "value1": "trayan",
+            "value2": "stefanov95"
+        },
+        "emailLabel": "Изпратете ми имейл на",
+        "linkedin": "https://www.linkedin.com/in/trayanstefanov",
+        "linkedinLabel": "Свържете се с мен в",
+        "github": "http://www.github.com/TrayanStefanov",
+        "githubLabel": "Разгледайте всички мои проекти в"
+    }
+}

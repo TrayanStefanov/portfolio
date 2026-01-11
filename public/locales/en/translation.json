@@ -1,0 +1,45 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contacts": "Contacts"
+    },
+    "footer": {
+        "phone": "+359 8888888",
+        "email": {
+            "value1": "trayan",
+            "value2": "stefanov95"
+        },
+        "credits": "Designed, Developed and Deployed by Trayan Stefanov",
+        "social": "Socials",
+        "social-links": {
+            "linkedin": "https://www.linkedin.com/in/trayanstefanov",
+            "github": "http://www.github.com/TrayanStefanov"
+        }
+    },
+    "language": {
+        "bg": "Bulgarian",
+        "en": "English"
+    },
+    "contacts": {
+        "title":{
+            "value1": "Want to get in",
+            "value2": "touch",
+            "value3": "with me"
+        },
+        "phone": "+359 8888888",
+        "phoneLabel": "Call me between 9:00-18:00",
+        "viber": "+359 8888888",
+        "viberLabel": "Message me on Viber",
+        "email": {
+            "value1": "trayan",
+            "value2": "stefanov95"
+        },
+        "emailLabel": "Email me at",
+        "linkedin": "https://www.linkedin.com/in/trayanstefanov",
+        "linkedinLabel": "Connect with me on",
+        "github": "http://www.github.com/TrayanStefanov",
+        "githubLabel": "Check out all of my projects at"
+    }
+}
