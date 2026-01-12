@@ -23,7 +23,7 @@
         "en": "English"
     },
     "contacts": {
-        "title":{
+        "title": {
             "value1": "Want to get in",
             "value2": "touch",
             "value3": "with me"
@@ -41,5 +41,66 @@
         "linkedinLabel": "Connect with me on",
         "github": "http://www.github.com/TrayanStefanov",
         "githubLabel": "Check out all of my projects at"
+    },
+    "home": {
+        "intro": {
+            "value1": "Hello",
+            "value2": "I'm Trayan",
+            "value3": "Software Developer",
+            "cta": {
+                "contact": "Contact Me",
+                "cv": "Download CV"
+            }
+        },
+        "about": {
+            "title": "About Me",
+            "description": "I am a passionate software developer focused on building modern, fast and scalable web applications. I enjoy turning complex problems into clean and intuitive digital experiences.",
+            "about": "Read More"
+        }
+    },
+    "projects": {
+        "title": "Latest Projects",
+        "items": [
+            {
+                "title": "Renovation company website",
+                "description": "A renovation company website that provides information about their services, projects, and availability.",
+                "mainImage": "/itskovStroy.png",
+                "slug": "profit-recovery",
+                "category": "freelance",
+                "tech": [
+                    "React",
+                    "Node.js",
+                    "Tailwind",
+                    "Git"
+                ]
+            },
+            {
+                "title": "Cashback services website",
+                "description": "A cashback platform that helps users get back money on previous purchases, taxes, deals, sales through government paperwork filing.",
+                "mainImage": "/profitRecovery.png",
+                "slug": "profit-recovery",
+                "category": "freelance",
+                "tech": [
+                    "React",
+                    "Node.js",
+                    "Tailwind",
+                    "Git",
+                    "HTML"
+                ]
+            },
+            {
+                "title": "Meat delicacies website",
+                "description": "A website that sells meat delicacies. The website features a user-friendly interface, easy navigation, and a secure payment system.",
+                "mainImage": "/masterMeats.png",
+                "slug": "profit-recovery",
+                "category": "freelance",
+                "tech": [
+                    "React",
+                    "Node.js",
+                    "Tailwind",
+                    "Github"
+                ]
+            }
+        ]
     }
 }
