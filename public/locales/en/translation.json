@@ -55,7 +55,7 @@
         "about": {
             "title": "About Me",
             "description": "I am a passionate software developer focused on building modern, fast and scalable web applications. I enjoy turning complex problems into clean and intuitive digital experiences.",
-            "about": "Read More"
+            "cta": "Read More"
         }
     },
     "projects": {
@@ -65,7 +65,7 @@
                 "title": "Renovation company website",
                 "description": "A renovation company website that provides information about their services, projects, and availability.",
                 "mainImage": "/itskovStroy.png",
-                "slug": "profit-recovery",
+                "slug": "itskov-stroy",
                 "category": "freelance",
                 "tech": [
                     "React",
@@ -92,7 +92,7 @@
                 "title": "Meat delicacies website",
                 "description": "A website that sells meat delicacies. The website features a user-friendly interface, easy navigation, and a secure payment system.",
                 "mainImage": "/masterMeats.png",
-                "slug": "profit-recovery",
+                "slug": "master-meats",
                 "category": "freelance",
                 "tech": [
                     "React",
@@ -101,6 +101,18 @@
                     "Github"
                 ]
             }
-        ]
+        ],
+        "page": {
+            "titlePart1": "Latest",
+            "titlePart2": "Projects",
+            "subtitle" : "Some of my most recent work"
+        },
+        "freelance": {
+            "title": "Freelance Projects"
+        },
+        "personal": {
+            "title": "Personal Projects"
+        },
+        "cta": "View Details"
     }
 }
