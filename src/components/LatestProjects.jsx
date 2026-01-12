@@ -5,12 +5,13 @@ import { useTranslation } from "react-i18next";
 const LatestProjects = () => {
   const { t } = useTranslation();
 
-  const projects = t("home.projects.items", { returnObjects: true });
+  const rawProjects = t("projects.items", { returnObjects: true });
+  const projects = Array.isArray(rawProjects) ? rawProjects : [];
 
   return (
     <section className="my-8 max-w-6xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold text-base-200 text-center mb-10 underline underline-offset-8 decoration-1 decoration-secondary">
-        {t("home.projects.title")}
+        {t("projects.title")}
       </h2>
 
       <motion.div
