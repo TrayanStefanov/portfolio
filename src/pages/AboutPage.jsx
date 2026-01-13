@@ -1,9 +1,8 @@
-import React from 'react'
-
+import TechCloud from "../components/TechCloud"
 const AboutPage = () => {
   return (
-    <div>
-      About
+    <div className="mt-[4rem]">
+      <TechCloud />
     </div>
   )
 }
