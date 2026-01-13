@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import TechNode from "./TechNode";
 
-// Corner labels as percentages
+// Corner labels as percentages (unchanged)
 const CORNER_POSITIONS = {
   frontend: { xPerc: 0, yPerc: 0 },
   backend: { xPerc: 1, yPerc: 0 },
@@ -13,11 +13,37 @@ const CORNER_POSITIONS = {
 const TECH_GROUPS = {
   frontend: ["HTML", "CSS", "React", "Tailwind"],
   backend: ["Node.js", "Express", "MongoDB"],
-  data: ["PostgreSQL", "Firebase"],
+  data: ["MongoDB", "Upstash"],
   tools: ["Git", "GitHub", "Figma"],
 };
 
-// bounds for floating nodes
+// Node layouts relative to their corner (new)
+const NODE_LAYOUTS = {
+  frontend: [
+    { x: 40,  y: 40 },
+    { x: 110, y: 40 },
+    { x: 40,  y: 80 },
+    { x: 110, y: 80 },
+  ],
+  backend: [
+    { x: -110, y: 40 },
+    { x: -40,  y: 80 },
+    { x: -75,  y: 120 },
+  ],
+  data: [
+    { x: 40,  y: -110 },
+    { x: 140, y: -110 },
+  ],
+  tools: [
+    { x: -110, y: -180 },
+    { x: -40,  y: -140 },
+    { x: -75,  y: -40 },
+  ],
+};
+
+
+
+// Bounds for floating nodes
 const CLOUD_BOUNDS = {
   minX: 0,
   maxX: 390,
@@ -27,8 +53,12 @@ const CLOUD_BOUNDS = {
 
 const TechCloud = () => {
   const [activeGroup, setActiveGroup] = useState(null);
+   const [frozenGroup, setFrozenGroup] = useState(null);  // click-to-freeze
   const containerRef = useRef(null);
 
+  const toggleFreeze = (groupKey) => {
+    setFrozenGroup(prev => (prev === groupKey ? null : groupKey));
+  };
   return (
     <div
       ref={containerRef}
@@ -56,6 +86,7 @@ const TechCloud = () => {
           }}
           onMouseEnter={() => setActiveGroup(groupKey)}
           onMouseLeave={() => setActiveGroup(null)}
+          onClick={() => toggleFreeze(groupKey)}
         >
           {groupKey.charAt(0).toUpperCase() + groupKey.slice(1)}
         </div>
@@ -70,8 +101,11 @@ const TechCloud = () => {
             index={i}
             groupKey={groupKey}
             activeGroup={activeGroup}
+            frozenGroup={frozenGroup}   // ✅ pass frozen info
             bounds={CLOUD_BOUNDS}
             containerRef={containerRef}
+            corner={CORNER_POSITIONS[groupKey]}  // corner anchor
+            layout={NODE_LAYOUTS[groupKey][i]}   // relative node layout
           />
         ))
       )}
