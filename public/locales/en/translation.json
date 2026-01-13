@@ -64,48 +64,123 @@
             {
                 "title": "Renovation company website",
                 "description": "A renovation company website that provides information about their services, projects, and availability.",
+                "intro": "A clean, professional website built to showcase renovation services and attract local clients.",
                 "mainImage": "/itskovStroy.png",
                 "slug": "itskov-stroy",
                 "category": "freelance",
+                "year": 2024,
                 "tech": [
                     "React",
                     "Node.js",
                     "Tailwind",
                     "Git"
+                ],
+                "links": {
+                    "live": "https://itskovstroy.com",
+                    "demo": null,
+                    "github": "https://github.com/TrayanStefanov/Freelance-IckoStroI"
+                },
+                "steps": [
+                    {
+                        "title": "Project Discovery",
+                        "content": "Worked with the client to understand their services, target audience, and business goals.",
+                        "notes": [
+                            "Client needed a fast turnaround",
+                            "Focus on local SEO and clarity"
+                        ],
+                        "image": "/itskovStroy.png"
+                    },
+                    {
+                        "title": "Design & Layout",
+                        "content": "Designed a clean, trustworthy layout emphasizing completed projects and services.",
+                        "image": "/itskovStroy.png"
+                    },
+                    {
+                        "title": "Development & Deployment",
+                        "content": "Built a responsive React-based website and deployed it with performance and SEO in mind."
+                    }
                 ]
             },
             {
                 "title": "Cashback services website",
                 "description": "A cashback platform that helps users get back money on previous purchases, taxes, deals, sales through government paperwork filing.",
+                "intro": "A cashback platform simplifying complex government filing processes for everyday users.",
                 "mainImage": "/profitRecovery.png",
                 "slug": "profit-recovery",
                 "category": "freelance",
+                "year": 2024,
                 "tech": [
                     "React",
                     "Node.js",
                     "Tailwind",
                     "Git",
                     "HTML"
+                ],
+                "links": {
+                    "live": "https://profitrecoverybg.eu/",
+                    "demo": null,
+                    "github": "https://github.com/TrayanStefanov/Freelance-ProfitRecovery"
+                },
+                "steps": [
+                    {
+                        "title": "Requirements & Research",
+                        "content": "Analyzed legal constraints and user flows required for government-related cashback processes."
+                    },
+                    {
+                        "title": "UX & Interface Design",
+                        "content": "Designed user flows focused on clarity, trust, and step-by-step guidance.",
+                        "image": "/profitRecovery.png"
+                    },
+                    {
+                        "title": "Platform Development",
+                        "content": "Implemented the frontend and backend logic, ensuring data validation and scalability.",
+                        "notes": [
+                            "Complex form validation",
+                            "Strict data handling requirements"
+                        ]
+                    }
                 ]
             },
             {
                 "title": "Meat delicacies website",
                 "description": "A website that sells meat delicacies. The website features a user-friendly interface, easy navigation, and a secure payment system.",
+                "intro": "An e-commerce website designed to showcase and sell premium meat products online.",
                 "mainImage": "/masterMeats.png",
                 "slug": "master-meats",
                 "category": "freelance",
+                "year": 2023,
                 "tech": [
                     "React",
                     "Node.js",
                     "Tailwind",
                     "Github"
+                ],
+                "links": {
+                    "live": null,
+                    "demo": "https://mastermeats-frontend.onrender.com/",
+                    "github": "https://github.com/TrayanStefanov/MasterMeats"
+                },
+                "steps": [
+                    {
+                        "title": "Product Structure & Planning",
+                        "content": "Defined product categories, pricing logic, and purchase flow."
+                    },
+                    {
+                        "title": "UI Design",
+                        "content": "Designed a visually rich interface highlighting product quality.",
+                        "image": "/masterMeats.png"
+                    },
+                    {
+                        "title": "Checkout & Integration",
+                        "content": "Implemented secure checkout and order handling."
+                    }
                 ]
             }
         ],
         "page": {
             "titlePart1": "Latest",
             "titlePart2": "Projects",
-            "subtitle" : "Some of my most recent work"
+            "subtitle": "Some of my most recent work"
         },
         "freelance": {
             "title": "Freelance Projects"
@@ -113,6 +188,18 @@
         "personal": {
             "title": "Personal Projects"
         },
-        "cta": "View Details"
+        "cta": "View Details",
+        "caseStudy": {
+            "projectNotFound": "Project not found",
+            "year": "Year",
+            "category": "Category",
+            "tech": "Tech Stack",
+            "links": {
+                "live": "Live Website",
+                "demo": "Demo Website",
+                "github": "GitHub Repo"
+            },
+            "breakdown": "Project Breakdown"
+        }
     }
 }
