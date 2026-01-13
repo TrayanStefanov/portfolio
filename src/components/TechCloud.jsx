@@ -37,7 +37,7 @@ const TechCloud = () => {
       {/* Center FULLSTACK label */}
       <div
         className="absolute flex items-center justify-center inset-0
-                      text-3xl md:text-5xl font-bold text-white/20 select-none pointer-events-none"
+                      text-3xl md:text-5xl font-bold text-secondary/70 select-none pointer-events-none"
       >
         FULLSTACK
       </div>
@@ -46,7 +46,7 @@ const TechCloud = () => {
       {Object.entries(CORNER_POSITIONS).map(([groupKey, pos]) => (
         <div
           key={groupKey}
-          className="absolute text-sm text-secondary cursor-pointer p-2"
+          className="absolute text-lg font-bold text-secondary cursor-pointer p-2"
           style={{
             left: `${pos.xPerc * 100}%`,
             top: `${pos.yPerc * 100}%`,
