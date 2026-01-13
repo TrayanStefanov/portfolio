@@ -1,59 +1,46 @@
-import { useFloatingNode } from "../hooks/useFloatingNode";
 import { useState, useEffect } from "react";
+import { useFloatingNode } from "../hooks/useFloatingNode";
 
-// Corner offsets for hover
-const CORNER_POSITIONS = {
-  frontend: { x: -195, y: -140 },
-  backend: { x: 195, y: -140 },
-  data: { x: -195, y: 140 },
-  tools: { x: 195, y: 140 },
-};
+const TechNode = ({
+  label,
+  groupKey,
+  activeGroup,
+  frozenGroup,
+  bounds,
+  containerRef,
+  corner,
+  layout,
+}) => {
+  const focused = activeGroup === groupKey || frozenGroup === groupKey;
+  const [cloudSize, setCloudSize] = useState({ width: 0, height: 0 });
 
-// Absolute start positions (to avoid overlapping)
-const NODE_START_POSITIONS = {
-  frontend: [
-    { x: -30, y: -20 },
-    { x: 0, y: -10 },
-    { x: 30, y: 10 },
-    { x: -15, y: 15 },
-  ],
-  backend: [
-    { x: -30, y: -20 },
-    { x: 0, y: -10 },
-    { x: 30, y: 10 },
-  ],
-  data: [
-    { x: -20, y: -10 },
-    { x: 10, y: 0 },
-  ],
-  tools: [
-    { x: -20, y: -15 },
-    { x: 10, y: 5 },
-    { x: 25, y: 15 },
-  ],
-};
-
-const TechNode = ({ label, groupKey, activeGroup, bounds, containerRef, index }) => {
-  const focused = activeGroup === groupKey;
-  const [cloudCenter, setCloudCenter] = useState({ x: 0, y: 0 });
-
-  // get center of container
+  // Get container size
   useEffect(() => {
-    if (containerRef.current) {
-      const { offsetWidth, offsetHeight } = containerRef.current;
-      setCloudCenter({ x: offsetWidth / 2, y: offsetHeight / 2 });
-    }
+    if (!containerRef.current) return;
+    const { offsetWidth, offsetHeight } = containerRef.current;
+    setCloudSize({ width: offsetWidth, height: offsetHeight });
   }, [containerRef]);
 
-  // starting position relative to center
-  const startPos = NODE_START_POSITIONS[groupKey][index % NODE_START_POSITIONS[groupKey].length];
-  let homeX = cloudCenter.x + startPos.x;
-  let homeY = cloudCenter.y + startPos.y;
+  // Center of cloud
+  const centerX = cloudSize.width / 2;
+  const centerY = cloudSize.height / 2;
 
-  // move to corner on hover
-  if (focused && CORNER_POSITIONS[groupKey]) {
-    homeX = cloudCenter.x + CORNER_POSITIONS[groupKey].x;
-    homeY = cloudCenter.y + CORNER_POSITIONS[groupKey].y;
+  // Default home position: center
+  let homeX = centerX;
+  let homeY = centerY;
+
+  // If hovered or frozen, move relative to corner + layout
+  if (focused && corner && layout) {
+    const anchorX = corner.xPerc * cloudSize.width;
+    const anchorY = corner.yPerc * cloudSize.height;
+
+    // Apply layout offset
+    let targetX = anchorX + layout.x;
+    let targetY = anchorY + layout.y;
+
+    // Clamp inside bounds to prevent overlap at edges
+    homeX = Math.max(bounds.minX, Math.min(bounds.maxX, targetX));
+    homeY = Math.max(bounds.minY, Math.min(bounds.maxY, targetY));
   }
 
   const pos = useFloatingNode({ homeX, homeY, bounds, focused });
