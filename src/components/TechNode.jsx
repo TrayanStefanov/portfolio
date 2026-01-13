@@ -1,18 +1,7 @@
 import { useFloatingNode } from "../hooks/useFloatingNode";
-import { useRef, useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
-const MIN_RADIUS = 40;
-const MAX_RADIUS = 100;
-
-function hashToUnitFloat(str) {
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) {
-    hash = (hash << 5) - hash + str.charCodeAt(i);
-    hash |= 0;
-  }
-  return Math.abs(hash % 1000) / 1000;
-}
-
+// Corner offsets for hover
 const CORNER_POSITIONS = {
   frontend: { x: -195, y: -140 },
   backend: { x: 195, y: -140 },
@@ -20,12 +9,35 @@ const CORNER_POSITIONS = {
   tools: { x: 195, y: 140 },
 };
 
-const TechNode = ({ label, groupKey, activeGroup, bounds, containerRef }) => {
-  const focused = activeGroup === groupKey;
+// Absolute start positions (to avoid overlapping)
+const NODE_START_POSITIONS = {
+  frontend: [
+    { x: -30, y: -20 },
+    { x: 0, y: -10 },
+    { x: 30, y: 10 },
+    { x: -15, y: 15 },
+  ],
+  backend: [
+    { x: -30, y: -20 },
+    { x: 0, y: -10 },
+    { x: 30, y: 10 },
+  ],
+  data: [
+    { x: -20, y: -10 },
+    { x: 10, y: 0 },
+  ],
+  tools: [
+    { x: -20, y: -15 },
+    { x: 10, y: 5 },
+    { x: 25, y: 15 },
+  ],
+};
 
-  // ⚡ Get dynamic container center
+const TechNode = ({ label, groupKey, activeGroup, bounds, containerRef, index }) => {
+  const focused = activeGroup === groupKey;
   const [cloudCenter, setCloudCenter] = useState({ x: 0, y: 0 });
 
+  // get center of container
   useEffect(() => {
     if (containerRef.current) {
       const { offsetWidth, offsetHeight } = containerRef.current;
@@ -33,25 +45,18 @@ const TechNode = ({ label, groupKey, activeGroup, bounds, containerRef }) => {
     }
   }, [containerRef]);
 
-  // Compute starting position around center
-  const angle = hashToUnitFloat(label) * Math.PI * 2;
-  const radius = MIN_RADIUS + hashToUnitFloat(label + "_r") * (MAX_RADIUS+70);
+  // starting position relative to center
+  const startPos = NODE_START_POSITIONS[groupKey][index % NODE_START_POSITIONS[groupKey].length];
+  let homeX = cloudCenter.x + startPos.x;
+  let homeY = cloudCenter.y + startPos.y;
 
-  let homeX = cloudCenter.x + Math.cos(angle) * radius;
-  let homeY = cloudCenter.y + Math.sin(angle) * radius;
-
-  // Hover moves to corner
+  // move to corner on hover
   if (focused && CORNER_POSITIONS[groupKey]) {
-    homeX = CORNER_POSITIONS[groupKey].x + cloudCenter.x; // corner relative to center
-    homeY = CORNER_POSITIONS[groupKey].y + cloudCenter.y;
+    homeX = cloudCenter.x + CORNER_POSITIONS[groupKey].x;
+    homeY = cloudCenter.y + CORNER_POSITIONS[groupKey].y;
   }
 
-  const pos = useFloatingNode({
-    homeX,
-    homeY,
-    bounds,
-    focused,
-  });
+  const pos = useFloatingNode({ homeX, homeY, bounds, focused });
 
   return (
     <div

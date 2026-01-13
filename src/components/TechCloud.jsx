@@ -1,15 +1,15 @@
 import { useState, useRef } from "react";
 import TechNode from "./TechNode";
 
-// Corner positions as percentages for labels
-const CORNER_LABELS = {
+// Corner labels as percentages
+const CORNER_POSITIONS = {
   frontend: { xPerc: 0, yPerc: 0 },
   backend: { xPerc: 1, yPerc: 0 },
   data: { xPerc: 0, yPerc: 1 },
   tools: { xPerc: 1, yPerc: 1 },
 };
 
-// Tech items
+// Tech groups
 const TECH_GROUPS = {
   frontend: ["HTML", "CSS", "React", "Tailwind"],
   backend: ["Node.js", "Express", "MongoDB"],
@@ -17,8 +17,13 @@ const TECH_GROUPS = {
   tools: ["Git", "GitHub", "Figma"],
 };
 
-// Bounds for floating
-const CLOUD_BOUNDS = { minX: 0, maxX: 390, minY: 0, maxY: 280 };
+// bounds for floating nodes
+const CLOUD_BOUNDS = {
+  minX: 0,
+  maxX: 390,
+  minY: 0,
+  maxY: 280,
+};
 
 const TechCloud = () => {
   const [activeGroup, setActiveGroup] = useState(null);
@@ -27,21 +32,21 @@ const TechCloud = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-[90%] xl:max-w-[50vw] aspect-[390/280] mx-auto"
+      className="relative w-[90%] xl:max-w-[50vw] aspect-[390/280] mx-auto border border-red-500 overflow-visible"
     >
       {/* Center FULLSTACK label */}
       <div
         className="absolute flex items-center justify-center inset-0
-                      text-3xl md:text-5xl font-bold text-secondary select-none pointer-events-none"
+                      text-3xl md:text-5xl font-bold text-white/20 select-none pointer-events-none"
       >
         FULLSTACK
       </div>
 
-      {/* Corner group labels */}
-      {Object.entries(CORNER_LABELS).map(([groupKey, pos]) => (
+      {/* Corner labels */}
+      {Object.entries(CORNER_POSITIONS).map(([groupKey, pos]) => (
         <div
           key={groupKey}
-          className="absolute text-lg text-secondary cursor-pointer p-2"
+          className="absolute text-sm text-secondary cursor-pointer p-2"
           style={{
             left: `${pos.xPerc * 100}%`,
             top: `${pos.yPerc * 100}%`,
@@ -56,12 +61,13 @@ const TechCloud = () => {
         </div>
       ))}
 
-      {/* Render all tech nodes */}
+      {/* Render tech nodes */}
       {Object.entries(TECH_GROUPS).map(([groupKey, items]) =>
-        items.map((tech) => (
+        items.map((tech, i) => (
           <TechNode
             key={tech}
             label={tech}
+            index={i}
             groupKey={groupKey}
             activeGroup={activeGroup}
             bounds={CLOUD_BOUNDS}
