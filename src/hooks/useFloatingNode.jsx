@@ -1,17 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 
 /**
- * Responsive floating node hook
+ * Responsive floating node hook with smooth motion
  * @param homeX - target x (can be corner or center)
  * @param homeY - target y
  * @param bounds - object {minX, maxX, minY, maxY} in px
- * @param focused - whether node should move to homeX/homeY instantly
+ * @param focused - whether node should move to homeX/homeY smoothly
  */
 export const useFloatingNode = ({ homeX, homeY, bounds, focused }) => {
   const t = useRef(0);
   const phase = useRef({ x: 0, y: 0 });
   const speed = useRef(0.002); // base speed
-
   const [pos, setPos] = useState({
     x: homeX,
     y: homeY,
@@ -25,7 +24,7 @@ export const useFloatingNode = ({ homeX, homeY, bounds, focused }) => {
       x: Math.random() * 1000,
       y: Math.random() * 1000,
     };
-    speed.current = 0.002 + Math.random() * 0.005; // subtle speed
+    speed.current = 0.002 + Math.random() * 0.005; // subtle speed variation
   }, []);
 
   useEffect(() => {
@@ -34,18 +33,31 @@ export const useFloatingNode = ({ homeX, homeY, bounds, focused }) => {
     const animate = () => {
       t.current += speed.current;
 
-      // subtle floating offsets
-      const floatX = Math.sin(t.current + phase.current.x) * 120;
-      const floatY = Math.cos(t.current + phase.current.y) * 80;
+      // floating offsets (small gentle movement)
+      const floatX = Math.sin(t.current + phase.current.x) * 80; // reduced for subtlety
+      const floatY = Math.cos(t.current + phase.current.y) * 55;
 
-      let x = focused ? homeX : homeX + floatX;
-      let y = focused ? homeY : homeY + floatY;
+      const targetX = focused ? homeX : homeX + floatX;
+      const targetY = focused ? homeY : homeY + floatY;
 
-      // clamp inside bounds
-      x = Math.max(bounds.minX, Math.min(bounds.maxX, x));
-      y = Math.max(bounds.minY, Math.min(bounds.maxY, y));
+      // Smooth interpolation (lerp) to target
+      const lerp = (start, end, amt) => start + (end - start) * amt;
+      const smoothFactor = 0.02; // smaller = slower, smoother
+      // Clamp target first
+      const clampedTargetX = Math.max(
+        bounds.minX,
+        Math.min(bounds.maxX, targetX)
+      );
+      const clampedTargetY = Math.max(
+        bounds.minY,
+        Math.min(bounds.maxY, targetY)
+      );
 
-      // depth illusion
+      // Lerp toward clamped target
+      let x = lerp(pos.x, clampedTargetX, smoothFactor);
+      let y = lerp(pos.y, clampedTargetY, smoothFactor);
+
+      // Depth illusion (opacity & scale)
       const depth = (y - bounds.minY) / (bounds.maxY - bounds.minY);
       const opacity = 0.45 + depth * 0.55;
       const scale = 0.94 + depth * 0.1;
@@ -57,7 +69,7 @@ export const useFloatingNode = ({ homeX, homeY, bounds, focused }) => {
 
     raf = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(raf);
-  }, [focused, homeX, homeY, bounds]);
+  }, [focused, homeX, homeY, bounds, pos]);
 
   return pos;
 };
