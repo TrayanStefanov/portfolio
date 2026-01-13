@@ -25,15 +25,17 @@ const techIcons = {
 const ProjectCard = ({ project }) => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  const goToProject = () => {
+    navigate(`/projects/${project.slug || "coming-soon"}`);
+  };
+
   return (
     <div
       role="button"
       tabIndex={0}
-      onClick={() => navigate(`/projects/${project.slug || "coming-soon"}`)}
-      onKeyDown={(e) =>
-        e.key === "Enter" &&
-        navigate(`/projects/${project.slug || "coming-soon"}`)
-      }
+      onClick={goToProject}
+      onKeyDown={(e) => e.key === "Enter" && goToProject()}
       className="
         cursor-pointer overflow-hidden
         border border-white/5
@@ -51,7 +53,7 @@ const ProjectCard = ({ project }) => {
 
       <div className="p-4 text-left">
         <h3 className="text-2xl font-semibold text-white">
-          <span className="text-secondary">{">"}</span>
+          <span className="text-secondary mr-1">{">"}</span>
           {project.title}
         </h3>
 
@@ -73,6 +75,10 @@ const ProjectCard = ({ project }) => {
 
         <div className="flex justify-end">
           <button
+            onClick={(e) => {
+              e.stopPropagation();
+              goToProject();
+            }}
             className="
               btn btn-sm btn-outline
               rounded-xs btn-secondary
@@ -86,5 +92,6 @@ const ProjectCard = ({ project }) => {
     </div>
   );
 };
+
 
 export default ProjectCard;
