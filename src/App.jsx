@@ -9,6 +9,8 @@ const About = lazy(() => import("./pages/AboutPage.jsx"));
 const Contacts = lazy(() => import("./pages/ContactsPage.jsx"));
 const Projects = lazy(() => import("./pages/ProjectsPage.jsx"));
 const Error404 = lazy(() => import("./pages/Error404Page.jsx"));
+const CaseStudy = lazy(() => import("./pages/CaseStudyPage.jsx"));
+
 
 const App = () => {
   return (
@@ -28,6 +30,7 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="*" element={<Error404 />} />
+          <Route path="/projects/:slug" element={<CaseStudy />} />
         </Routes>
       </Suspense>
 
