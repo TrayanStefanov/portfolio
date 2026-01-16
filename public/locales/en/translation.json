@@ -28,6 +28,10 @@
             "value2": "touch",
             "value3": "with me"
         },
+        "desktopTitle": {
+            "value1": "Got a project",
+            "value2": "Want to make it a reality"
+        },
         "phone": "+359 8888888",
         "phoneLabel": "Call me between 9:00-18:00",
         "viber": "+359 8888888",
@@ -194,6 +198,7 @@
             "year": "Year",
             "category": "Category",
             "tech": "Tech Stack",
+            "notes": "Notes",
             "links": {
                 "live": "Live Website",
                 "demo": "Demo Website",
@@ -201,5 +206,30 @@
             },
             "breakdown": "Project Breakdown"
         }
+    },
+    "about":{
+        "title": "About Me",
+        "subtitle": "The story behind my journey in the world of web development.",
+        "text":{
+            "part1": "I’m a self-taught developer who started learning programming through online tutorials, documentation, and a lot of trial and error. Over time, I’ve built projects using JavaScript, React, Node.js, and more. I love learning not just how to make things work, but why they work that way. Alongside personal projects, I’ve also worked on small freelance and real-world projects, which taught me how to turn ideas into usable, reliable applications.",
+            "part2": "My motivation for pursuing programming as a career is simple: I enjoy creating thoughtful tools that make everyday tasks easier and less frustrating, so people can spend more time on what actually matters to them. Right now, my goal is to keep improving my skills in Full-Stack development with a focus on AI Integration and Cloud technologies by building more complex projects, learning from experienced developers, and continuously challenging myself with new technologies and problems.",
+            "appo": "'",
+            "dash": "-",
+            "comma": ",",
+            "period": ".",
+            "1": "I",
+            "2":"m a self",
+            "3": "taught developer who started learning programming through online tutorials",
+            "4": "documentation",
+            "5": "and a lot of trial and error"
+        }
+    },
+    "experience": {
+        "title": "Experience",
+        "subtitle": "My experience outside of IT",
+        "part1": "Before transitioning into software development, I spent several years working in operations and team management roles within a high-pressure retail environment. During this time, I led teams of 20–50+ people, managed daily operations, optimized workflows, and made data-driven decisions to improve efficiency and performance.",
+        "part2": "This experience shaped how I approach development today. I’m comfortable taking ownership of projects, communicating clearly with stakeholders, prioritizing work under tight deadlines, and solving problems in practical, outcome-focused ways. I’m used to working with real constraints—time, resources, and user expectations—and delivering reliable results.",
+        "part3": "My background outside of IT gives me a strong sense of responsibility, attention to detail, and business awareness, which I now apply when building production-ready web applications and collaborating with clients or teams."
     }
+    
 }
