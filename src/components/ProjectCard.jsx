@@ -52,12 +52,12 @@ const ProjectCard = ({ project }) => {
       />
 
       <div className="p-4 text-left">
-        <h3 className="text-2xl font-semibold text-white">
+        <h3 className="text-2xl lg:text-3xl font-semibold text-white">
           <span className="text-secondary mr-1">{">"}</span>
           {project.title}
         </h3>
 
-        <p className="text-sm text-gray-400 mt-1 line-clamp-3">
+        <p className="text-sm lg:text-lg text-gray-400 mt-1 line-clamp-3">
           {project.description}
         </p>
 
@@ -67,7 +67,7 @@ const ProjectCard = ({ project }) => {
             {project.tech.slice(0, 5).map((tech) => {
               const Icon = techIcons[tech];
               return Icon ? (
-                <Icon key={tech} className="text-lg" title={tech} />
+                <Icon key={tech} className="text-lg lg:text-2xl" title={tech} />
               ) : null;
             })}
           </div>
@@ -82,7 +82,7 @@ const ProjectCard = ({ project }) => {
             className="
               btn btn-sm btn-outline
               rounded-xs btn-secondary
-              mt-4 hover:text-primary
+              mt-4 lg:text-xl  hover:text-primary
             "
           >
             {t("projects.cta")}
