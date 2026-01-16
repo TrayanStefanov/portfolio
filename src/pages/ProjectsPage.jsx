@@ -16,7 +16,7 @@ const ProjectsPage = () => {
   const personalProjects = getLatestByCategory(projects, "personal");
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16">
+    <section className="max-w-6xl lg:mt-12 mx-auto px-4 py-16">
       {/* Page Header */}
       <header className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-white">
@@ -25,12 +25,12 @@ const ProjectsPage = () => {
             {t("projects.page.titlePart2")}
           </span>
         </h1>
-        <p className="text-base-200 mt-2">{t("projects.page.subtitle")}</p>
+        <p className="text-base-200 lg:text-2xl mt-2">{t("projects.page.subtitle")}</p>
       </header>
 
       {/* Freelance Projects */}
       <div className="mb-20">
-        <h2 className="text-3xl font-semibold text-base-200 mb-6 justify-self-center">
+        <h2 className="text-3xl lg:text-4xl font-semibold text-base-200 mb-6 justify-self-center">
           <span className="text-secondary">{"<"}</span> 
           {t("projects.freelance.title")}
           <span className="text-secondary">{">"}</span>
