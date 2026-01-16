@@ -73,24 +73,24 @@ const Navbar = () => {
         className="navbar justify-between relative"
       >
         {/* Logo */}
-        <div className="navbar-start h-60px">
-          <Link to="/" className="flex items-center">
-            <span className="text-secondary-content font-bold text-2xl">
+        <div className="navbar-start h-60px lg:h-140px">
+          <Link to="/" className="flex items-center text-2xl font-bold lg:text-7xl">
+            <span className="text-secondary-content">
               {"<"}
             </span>
-            <span className="text-secondary text-2xl font-bold mx-1">
+            <span className="text-secondary mx-1">
               TrayanS
             </span>
-            <span className="text-secondary-content font-bold text-2xl">
+            <span className="text-secondary-content">
               {"/>"}
             </span>
           </Link>
         </div>
 
         {/* Desktop Nav Links */}
-        <div className="navbar-end w-[70vw] hidden md:flex xl:me-20 2xl:me-40 font-pf">
+        <div className="navbar-end w-[70vw] hidden md:flex font-pf">
           <motion.ul
-            className="menu menu-horizontal md:text-lg lg:text-xl text-secondary-content items-center relative"
+            className="menu menu-horizontal md:text-lg lg:text-3xl text-secondary-content items-center relative"
             initial="hidden"
             animate="show"
             variants={mobileListVariants}
