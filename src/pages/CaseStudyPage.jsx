@@ -13,35 +13,128 @@ const CaseStudyPage = () => {
   const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
-    return <p className="text-center mt-[4rem]">{t("projects.caseStudy.notFound")}<span className="text-secondary">.</span></p>;
+    return (
+      <p className="text-center mt-[4rem]">
+        {t("projects.caseStudy.notFound")}
+        <span className="text-secondary">.</span>
+      </p>
+    );
   }
 
   return (
-    <section className="max-w-6xl rounded-xs mx-auto mt-[4rem] px-4 py-16">
+    <section className="max-w-6xl rounded-xs mx-auto mt-[4rem] lg:mt-[8rem] px-4 py-16">
       {/* Intro */}
-      <header className="mb-8 mx-4 grid md:grid-cols-2 gap-10 items-center">
+      <header className="mb-8 mx-4 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+
+        {project.mainImage && (
+          <img
+          src={project.mainImage}
+            alt={project.title}
+            className="hidden lg:block rounded border border-white/10"
+          />
+        )}
+        {project.links && (
+          <div className="flex flex-wrap justify-center gap-4 mt-10">
+            {project.links.live && (
+              <a
+                href={project.links.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-accent rounded-none text-secondary px-6"
+              >
+                {t("projects.caseStudy.links.live")}
+              </a>
+            )}
+
+            {project.links.demo && (
+              <a
+                href={project.links.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-accent rounded-none text-secondary px-6"
+              >
+                {t("projects.caseStudy.links.demo")}
+              </a>
+            )}
+
+            {project.links.github && (
+              <a
+                href={project.links.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-accent rounded-none text-secondary px-6"
+              >
+                {t("projects.caseStudy.links.github")}
+              </a>
+            )}
+          </div>
+        )}
+        </div>
+        <div>
           <h1 className="text-3xl md:text-5xl font-bold text-base-200 text-center mb-4">
             {project.title}
           </h1>
-          <p className="text-base-300 text-xl mb-6">{project.intro}</p>
-
-          {/* Meta */}
-          <div className="text-base text-base-300">
+          <p className="hidden lg:block text-base-300 text-lg lg:text-2xl mb-6">
+            {project.intro}
+          </p>
+          <div className="hidden lg:block text-base text-base-300">
             <p>
-              <strong>{t("projects.caseStudy.category")}<span className="text-secondary">:</span></strong>{" "}
+              <strong>
+                {t("projects.caseStudy.category")}
+                <span className="text-secondary">:</span>
+              </strong>{" "}
               {project.category === "freelance"
                 ? "Freelance Project"
                 : "Personal Project"}
             </p>
             {project.year && (
               <p>
-                <strong>{t("projects.caseStudy.year")}<span className="text-secondary">:</span></strong> {project.year}
+                <strong>
+                  {t("projects.caseStudy.year")}
+                  <span className="text-secondary">:</span>
+                </strong>{" "}
+                {project.year}
               </p>
             )}
           </div>
+          {project.tech && project.tech.length > 0 && (
+        <section className="hidden lg:block mb-6 mx-10">
+          <h2 className="text-2xl font-semibold text-white mb-6 text-center">
+            {t("projects.caseStudy.tech")}
+          </h2>
+          <TechStack tech={project.tech} />
+        </section>
+      )}
+        </div>
+        <p className="block lg:hidden text-base-300 text-xl mb-6">
+          {project.intro}
+        </p>
+
+        {/* Meta */}
+        <div className="lg:hidden text-base text-base-300">
+          <p>
+            <strong>
+              {t("projects.caseStudy.category")}
+              <span className="text-secondary">:</span>
+            </strong>{" "}
+            {project.category === "freelance"
+              ? "Freelance Project"
+              : "Personal Project"}
+          </p>
+          {project.year && (
+            <p>
+              <strong>
+                {t("projects.caseStudy.year")}
+                <span className="text-secondary">:</span>
+              </strong>{" "}
+              {project.year}
+            </p>
+          )}
+        </div>
         {/* CTA buttons */}
         {project.links && (
-          <div className="flex flex-wrap justify-center gap-4 mb-2">
+          <div className="lg:hidden flex flex-wrap justify-center gap-4 mb-2">
             {project.links.live && (
               <a
                 href={project.links.live}
@@ -81,15 +174,17 @@ const CaseStudyPage = () => {
           <img
             src={project.mainImage}
             alt={project.title}
-            className="rounded border border-white/10"
+            className="rounded border lg:hidden border-white/10"
           />
         )}
       </header>
 
       {/* Tech Stack */}
       {project.tech && project.tech.length > 0 && (
-        <section className="mb-6 mx-10">
-          <h2 className="text-2xl font-semibold text-white mb-6 text-center">{t("projects.caseStudy.tech")}</h2>
+        <section className="lg:hidden mb-6 mx-10">
+          <h2 className="text-2xl font-semibold text-white mb-6 text-center">
+            {t("projects.caseStudy.tech")}
+          </h2>
           <TechStack tech={project.tech} />
         </section>
       )}
