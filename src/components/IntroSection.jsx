@@ -18,7 +18,7 @@ const IntroSection = () => {
       <motion.p
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-base-200 text-[36px] md:text-xl"
+        className="text-base-200 text-4xl lg:text-6xl"
       >
         {t("home.intro.value1")}
         <span className="text-secondary">!</span>
@@ -28,7 +28,7 @@ const IntroSection = () => {
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="text-2xl md:text-5xl font-bold text-base-200 mt-2 underline underline-offset-8 decoration-1 decoration-secondary"
+        className="text-2xl lg:text-5xl text-base-200 mt-2 lg:mt-8 underline underline-offset-[12px] decoration-4 decoration-secondary"
       >
         {t("home.intro.value2")}
         <span className="text-secondary">.</span>
@@ -38,7 +38,7 @@ const IntroSection = () => {
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="text-2xl md:text-2xl text-base-200 font-semibold mt-2"
+        className="text-2xl lg:text-5xl text-base-200 font-semibold mt-2 lg:mt-4"
       >
         {t("home.intro.value3")}
       </motion.h2>
@@ -48,18 +48,18 @@ const IntroSection = () => {
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
-        className="flex justify-center gap-4 mt-8"
+        className="flex justify-center lg:text-5xl gap-4 lg:gap-20 mt-8 lg:mt-16"
       >
         <button
           onClick={() => navigate("/contacts")}
-          className="btn btn-accent rounded-none text-secondary px-6"
+          className="btn btn-accent lg:scale-150 rounded-none text-secondary px-6"
         >
           {t("home.intro.cta.contact")}
         </button>
 
         <button
           onClick={downloadCV}
-          className="btn btn-outline rounded-xs btn-secondary px-6 text-secondary hover:text-primary"
+          className="btn btn-outline lg:scale-150 rounded-xs btn-secondary px-6 text-secondary hover:text-primary"
         >
           {t("home.intro.cta.cv")}
         </button>
