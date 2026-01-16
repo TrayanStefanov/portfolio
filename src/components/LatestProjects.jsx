@@ -10,7 +10,7 @@ const LatestProjects = () => {
 
   return (
     <section className="my-8 max-w-6xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-base-200 text-center mb-10 underline underline-offset-8 decoration-1 decoration-secondary">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-base-200 text-center mb-10 underline underline-offset-8 decoration-1 decoration-secondary">
         {t("projects.title")}
       </h2>
 
