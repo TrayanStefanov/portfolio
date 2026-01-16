@@ -7,10 +7,14 @@ import IntroSection from "../components/IntroSection";
 const Home = () => {
   return (
     <div className="overflow-hidden pt-20 min-h-[80vh] mx-8 text-center justify-items-center">
-      <IntroSection />
-      <ProfileImage />
+      <div className="lg:flex lg:flex-row lg:w-4xl lg:gap-16 lg:min-h-[80vh] justify-around items-center">
+        <IntroSection />
+        <ProfileImage />
+      </div>
+      <div className="lg:flex lg:flex-row lg:w-4xl lg:gap-8 lg:mb-20 justify-around items-center">
       <TechStack />
       <AboutSection />
+      </div>
       <LatestProjects />
     </div>
   );
