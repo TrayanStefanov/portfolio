@@ -49,7 +49,7 @@ const Footer = () => {
       )}
 
       <footer
-        className={`footer bg-primary text-primary justify-around py-2.5 px-15 border-t-2 border-secondary block ${contactsStyle}`}
+        className={`footer bg-primary text-primary justify-around py-2.5 lg:p-6 px-15 border-t-2 border-secondary block ${contactsStyle}`}
       >
         <div className="flex flex-row flex-wrap justify-center w-full mx-auto pb-2.5 md:px-4 gap-4">
           {/* Phone */}
@@ -59,7 +59,7 @@ const Footer = () => {
             onMouseLeave={handleLeave}
             onTouchStart={(e) => handleHover(phone, e)}
             onTouchEnd={handleLeave}
-            className="flex items-center gap-1 text-secondary text-2xl"
+            className="flex items-center gap-1 text-secondary text-2xl lg:text-3xl"
           >
             <FiPhoneCall />
           </a>
@@ -71,7 +71,7 @@ const Footer = () => {
             onMouseLeave={handleLeave}
             onTouchStart={(e) => handleHover(phone, e)}
             onTouchEnd={handleLeave}
-            className="flex items-center gap-1 text-secondary text-2xl"
+            className="flex items-center gap-1 text-secondary text-2xl lg:text-3xl"
           >
             <FaViber />
           </a>
@@ -83,7 +83,7 @@ const Footer = () => {
             onMouseLeave={handleLeave}
             onTouchStart={(e) => handleHover(email, e)}
             onTouchEnd={handleLeave}
-            className="flex items-center gap-1 text-secondary text-2xl"
+            className="flex items-center gap-1 text-secondary text-2xl lg:text-3xl"
           >
             <FiMail />
           </a>
@@ -101,7 +101,7 @@ const Footer = () => {
               handleHover(t("footer.social-links.linkedin"), e)
             }
             onTouchEnd={handleLeave}
-            className="text-secondary text-2xl"
+            className="text-secondary text-2xl lg:text-3xl"
           >
             <TbBrandLinkedin />
           </a>
@@ -119,14 +119,14 @@ const Footer = () => {
               handleHover(t("footer.social-links.github"), e)
             }
             onTouchEnd={handleLeave}
-            className="text-secondary text-2xl"
+            className="text-secondary text-2xl lg:text-3xl"
           >
             <TbBrandGithub />
           </a>
         </div>
 
         {/* Slogan */}
-        <p className="justify-self-center self-center text-center text-secondary text-xs md:text-xl lg:hidden font-ns">
+        <p className="justify-self-center self-center text-center text-secondary text-xs md:text-xl">
           {t("footer.credits")}
         </p>
       </footer>
