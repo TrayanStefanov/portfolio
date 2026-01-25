@@ -29,8 +29,10 @@
             "value3": "with me"
         },
         "desktopTitle": {
-            "value1": "Got a project",
-            "value2": "Want to make it a reality"
+            "value1": "Got a ",
+            "value2": "project",
+            "value3": "Want to make it a ",
+            "value4": "reality"
         },
         "phone": "+359 8888888",
         "phoneLabel": "Call me between 9:00-18:00",
@@ -50,7 +52,7 @@
         "intro": {
             "value1": "Hello",
             "value2": "I'm Trayan",
-            "value3": "Software Developer",
+            "value3": "Full-Stack Developer",
             "cta": {
                 "contact": "Contact Me",
                 "cv": "Download CV"
@@ -207,29 +209,88 @@
             "breakdown": "Project Breakdown"
         }
     },
-    "about":{
+    "about": {
         "title": "About Me",
-        "subtitle": "The story behind my journey in the world of web development.",
-        "text":{
-            "part1": "I’m a self-taught developer who started learning programming through online tutorials, documentation, and a lot of trial and error. Over time, I’ve built projects using JavaScript, React, Node.js, and more. I love learning not just how to make things work, but why they work that way. Alongside personal projects, I’ve also worked on small freelance and real-world projects, which taught me how to turn ideas into usable, reliable applications.",
-            "part2": "My motivation for pursuing programming as a career is simple: I enjoy creating thoughtful tools that make everyday tasks easier and less frustrating, so people can spend more time on what actually matters to them. Right now, my goal is to keep improving my skills in Full-Stack development with a focus on AI Integration and Cloud technologies by building more complex projects, learning from experienced developers, and continuously challenging myself with new technologies and problems.",
-            "appo": "'",
-            "dash": "-",
-            "comma": ",",
-            "period": ".",
-            "1": "I",
-            "2":"m a self",
-            "3": "taught developer who started learning programming through online tutorials",
-            "4": "documentation",
-            "5": "and a lot of trial and error"
+        "subtitle": "The story behind my journey in web development.",
+        "part1": "I’m a self-taught web developer proficient in the <mern>MERN stack</mern>. I learned programming through online tutorials and courses, reading documentation, and working on real projects. Over time, I’ve built a number of full-stack projects using the MERN stack - JavaScript, React, Node.js, and MongoDB - both personal and freelance. I have a strong foundation in web development and I enjoy understanding not just how things work, but why they work the way that they do. In addition to personal projects, I’ve also developed and deployed freelance real-world applications that are <usability>easy to use</usability> focusing on <reliability>reliability</reliability>, <scalability>scalability</scalability> and <ux>user experience</ux>.",
+        "part2": "I am pursuing programming as a career because I enjoy creating <thoughtful>thoughtful and usefull</thoughtful> tools that can help make life <easier>easier</easier> and less frustrating. Right now, my <goal>goal</goal> is to keep improving my skills in Full-Stack development with a focus on <AI>AI integration</AI> and <Cloud>Cloud technologies</Cloud> technologies by building complex projects and continuously challenging myself.",
+        "keywords": {
+            "mern": {
+                "label": "MERN stack",
+                "tooltip": "JavaScript, React, Node.js, and MongoDB."
+            },
+            "reliability": {
+                "label": "reliability",
+                "tooltip": "Built authentication and order systems for real-world applications."
+            },
+            "scalability": {
+                "label": "scalability",
+                "tooltip": "Designed systems that can handle growing numbers of users and data."
+            },
+            "usability": {
+                "label": "easy to use",
+                "tooltip": "Built intuitive interfaces that provide smooth user interactions with minimal friction."
+            },
+            "ux": {
+                "label": "user experience",
+                "tooltip": "Focused on delivering a smooth and satisfying user experience."
+            },
+            "goal": {
+                "label": "goal",
+                "tooltip": "Continuously learning and building complex full-stack projects."
+            },
+            "thoughtful": {
+                "label": "thoughtful and useful",
+                "tooltip": "Built tools that are build with purpose and solving a need."
+            },
+            "easier": {
+                "label": "easier and less frustrating",
+                "tooltip": "Built tools that take off good chunk of the pressure and stress that life can bring."
+            },
+            "AI": {
+                "label": "AI integration",
+                "tooltip": "Integrating AI into existing systems and applications for a richer and smoother user experience."
+            },
+            "Cloud": {
+                "label": "Cloud technologies",
+                "tooltip": "Learning and gaining experience with AWS, Azure, and GCP for completely cloud-based solutions."
+            }
         }
     },
     "experience": {
         "title": "Experience",
-        "subtitle": "My experience outside of IT",
-        "part1": "Before transitioning into software development, I spent several years working in operations and team management roles within a high-pressure retail environment. During this time, I led teams of 20–50+ people, managed daily operations, optimized workflows, and made data-driven decisions to improve efficiency and performance.",
-        "part2": "This experience shaped how I approach development today. I’m comfortable taking ownership of projects, communicating clearly with stakeholders, prioritizing work under tight deadlines, and solving problems in practical, outcome-focused ways. I’m used to working with real constraints—time, resources, and user expectations—and delivering reliable results.",
-        "part3": "My background outside of IT gives me a strong sense of responsibility, attention to detail, and business awareness, which I now apply when building production-ready web applications and collaborating with clients or teams."
+        "subtitle": "My experience outside of IT sector.",
+        "part1": "Before transitioning into web development, I spent several years in a <leadership>leadership position</leadership> and <operations>operations management</operations> within a high-pressure dynamic retail environment. I reached profit targets and overachieved store performance goals by focusing on user <experience>experience and satisfaction</experience>, making our products easy to find and purchase.",
+        "part2": "This has somewhat shaped how I approach development today. I’m comfortable taking <ownership>ownership</ownership> of my code, <communication>communicating effectively</communication>, <creativity>creative problem solving</creativity>, and delivering respectable results under <constraints>real-world factors</constraints>.",
+        "keywords": {
+            "leadership": {
+                "label": "leadership",
+                "tooltip": "Led teams of 20–50+ people and fostered goal-oriented environment."
+            },
+            "operations": {
+                "label": "operations management",
+                "tooltip": "Managed daily operations and streamlined processes."
+            },
+            "experience": {
+                "label": "experience and satisfaction",
+                "tooltip": "Focused on a client-first approach and user experience."
+            },
+            "ownership": {
+                "label": "ownership",
+                "tooltip": "I take full responsibility for the quality of my work from planning to execution."
+            },
+            "communication": {
+                "label": "communicating effectively",
+                "tooltip": "Clear and concise communication with clients so as to better understand their wants and needs."
+            },
+            "creativity": {
+                "label": "creative problem solving",
+                "tooltip": "Sometimes the best way to solve a problem is think outside the box."
+            },
+            "constraints": {
+                "label": "real-world factors",
+                "tooltip": "Factors such as time constraints, budget, client expectations and target audience."
+            }
+        }
     }
-    
 }
