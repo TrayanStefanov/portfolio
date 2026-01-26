@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
+import KeywordContext from "./KeywordContext";
 
 const AboutText = () => {
   const { t } = useTranslation();
@@ -10,18 +11,95 @@ const AboutText = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="max-w-4xl mx-4  mt-8 text-center text-secondary justify-self-center"
+      className="max-w-4xl mx-4 mt-8 text-center text-secondary justify-self-center"
     >
-      <h1 className="text-3xl md:text-5xl font-bold text-center mb-4 lg:mb-8 underline underline-offset-8 decoration-1 decoration-secondary">
-            {t("about.title")}
-          </h1>
-          <p className="text-xl lg:text-2xl mb-6 text-secondary/70">{t("about.subtitle")}</p>
+      {/* Title */}
+      <h1 className="text-3xl md:text-5xl font-bold mb-4 lg:mb-8 underline underline-offset-8 decoration-1 decoration-secondary">
+        {t("about.title")}
+      </h1>
 
-      <p className="text-base-200 mx-6 text-base md:text-lg leading-relaxed">
-        {t("about.part1")}
+      {/* Subtitle */}
+      <p className="text-xl lg:text-2xl mb-6 text-secondary/70">
+        {t("about.subtitle")}
       </p>
-      <p className="text-base-200 mx-6 my-8 text-base md:text-lg leading-relaxed">
-        {t("about.part2")}
+
+      {/* Part 1 */}
+      <p className="text-base-200 mx-6 text-base md:text-lg leading-relaxed">
+        <Trans
+          i18nKey="about.part1"
+          components={{
+            mern: (
+              <KeywordContext
+                label={t("about.keywords.mern.label")}
+                tooltip={t("about.keywords.mern.tooltip")}
+              />
+            ),
+            reliability: (
+              <KeywordContext
+                label={t("about.keywords.reliability.label")} // visible word
+                tooltip={t("about.keywords.reliability.tooltip")}
+              />
+            ),
+            scalability: (
+              <KeywordContext
+                label={t("about.keywords.scalability.label")}
+                tooltip={t("about.keywords.scalability.tooltip")}
+              />
+            ),
+            usability: (
+              <KeywordContext
+                label={t("about.keywords.usability.label")}
+                tooltip={t("about.keywords.usability.tooltip")}
+              />
+            ),
+            ux: (
+              <KeywordContext
+                label={t("about.keywords.ux.label")}
+                tooltip={t("about.keywords.ux.tooltip")}
+              />
+            ),
+          }}
+        />
+      </p>
+
+      {/* Part 2 */}
+      <p className="text-base-200 mx-6 text-base md:text-lg leading-relaxed">
+        <Trans
+          i18nKey="about.part2"
+          components={{
+            goal: (
+              <KeywordContext
+                label={t("about.keywords.goal.label")}
+                tooltip={t("about.keywords.goal.tooltip")}
+                side="left"
+              />
+            ),
+            thoughtful: (
+              <KeywordContext
+                label={t("about.keywords.thoughtful.label")}
+                tooltip={t("about.keywords.thoughtful.tooltip")}
+              />
+            ),
+            easier: (
+              <KeywordContext
+                label={t("about.keywords.easier.label")}
+                tooltip={t("about.keywords.easier.tooltip")}
+              />
+            ),
+            AI: (
+              <KeywordContext
+                label={t("about.keywords.AI.label")}
+                tooltip={t("about.keywords.AI.tooltip")}
+              />
+            ),
+            Cloud: (
+              <KeywordContext
+                label={t("about.keywords.Cloud.label")}
+                tooltip={t("about.keywords.Cloud.tooltip")}
+              />
+            ),
+          }}
+        />
       </p>
     </motion.section>
   );
