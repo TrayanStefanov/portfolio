@@ -5,8 +5,10 @@ import ExperienceText from "../components/ExperienceText";
 const AboutPage = () => {
   return (
     <div className="my-[4rem]">
-      <ProfileImage />
-      <div className="border-t-2 border-b-2 border-secondary/70">
+      <div className="lg:hidden">
+        <ProfileImage />
+      </div>
+      <div className="hidden lg:block border-t-2 border-b-2 border-secondary/70">
         <TechCloud />
       </div>
       <AboutText />
