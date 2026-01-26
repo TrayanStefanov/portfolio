@@ -211,9 +211,9 @@
     },
     "about": {
         "title": "About Me",
-        "subtitle": "The story behind my journey in web development.",
-        "part1": "I’m a self-taught web developer proficient in the <mern>MERN stack</mern>. I learned programming through online tutorials and courses, reading documentation, and working on real projects. Over time, I’ve built a number of full-stack projects using the MERN stack - JavaScript, React, Node.js, and MongoDB - both personal and freelance. I have a strong foundation in web development and I enjoy understanding not just how things work, but why they work the way that they do. In addition to personal projects, I’ve also developed and deployed freelance real-world applications that are <usability>easy to use</usability> focusing on <reliability>reliability</reliability>, <scalability>scalability</scalability> and <ux>user experience</ux>.",
-        "part2": "I am pursuing programming as a career because I enjoy creating <thoughtful>thoughtful and usefull</thoughtful> tools that can help make life <easier>easier</easier> and less frustrating. Right now, my <goal>goal</goal> is to keep improving my skills in Full-Stack development with a focus on <AI>AI integration</AI> and <Cloud>Cloud technologies</Cloud> technologies by building complex projects and continuously challenging myself.",
+        "subtitle": "My journey in web development.",
+        "part1": "I’m a self-taught web developer proficient in the <mern>MERN stack</mern>. I learned programming through online tutorials and courses, reading documentation, and working on real projects. I have a strong foundation in web development and I enjoy understanding not just how things work, but why they work the way that they do. In addition to personal projects, I’ve also developed and deployed freelance real-world applications that are <usability>easy to use</usability> focusing on <reliability>reliability</reliability>, <scalability>scalability</scalability> and <ux>user experience</ux>.",
+        "part2": "I am pursuing programming as a career because I enjoy creating <thoughtful>thoughtful and usefull</thoughtful> tools that can help make everyday life <easier>easier</easier>. Right now, my <goal>goal</goal> is to keep improving my skills in Full-Stack development with a focus on <AI>AI integration</AI> and <Cloud>Cloud technologies</Cloud> technologies by building complex projects and continuously challenging myself.",
         "keywords": {
             "mern": {
                 "label": "MERN stack",
@@ -237,7 +237,7 @@
             },
             "goal": {
                 "label": "goal",
-                "tooltip": "Continuously learning and building complex full-stack projects."
+                "tooltip": "Continuously learning and improving my skills by building complex full-stack projects."
             },
             "thoughtful": {
                 "label": "thoughtful and useful",
@@ -258,10 +258,9 @@
         }
     },
     "experience": {
-        "title": "Experience",
-        "subtitle": "My experience outside of IT sector.",
+        "title": "My experience outside of the IT sector.",
         "part1": "Before transitioning into web development, I spent several years in a <leadership>leadership position</leadership> and <operations>operations management</operations> within a high-pressure dynamic retail environment. I reached profit targets and overachieved store performance goals by focusing on user <experience>experience and satisfaction</experience>, making our products easy to find and purchase.",
-        "part2": "This has somewhat shaped how I approach development today. I’m comfortable taking <ownership>ownership</ownership> of my code, <communication>communicating effectively</communication>, <creativity>creative problem solving</creativity>, and delivering respectable results under <constraints>real-world factors</constraints>.",
+        "part2": "This has somewhat shaped how I approach development today. I’m comfortable taking <ownership>ownership</ownership> of my work, <communication>communicating effectively</communication>, <creativity>creative problem solving</creativity>, and delivering respectable results under <constraints>real-world factors</constraints>.",
         "keywords": {
             "leadership": {
                 "label": "leadership",
