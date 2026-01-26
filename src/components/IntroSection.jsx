@@ -14,7 +14,7 @@ const IntroSection = () => {
   };
 
   return (
-    <section className="text-center mt-6">
+    <section className="text-center mt-6 content-center">
       <motion.p
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ const IntroSection = () => {
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="text-2xl lg:text-5xl text-base-200 mt-2 lg:mt-8 underline underline-offset-[12px] decoration-4 decoration-secondary"
+        className="text-2xl lg:text-5xl text-base-200 mt-2 lg:mt-8 underline underline-offset-[12px] decoration-2 decoration-secondary"
       >
         {t("home.intro.value2")}
         <span className="text-secondary">.</span>

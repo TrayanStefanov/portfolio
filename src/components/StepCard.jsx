@@ -2,14 +2,14 @@ import { useTranslation } from "react-i18next";
 
 const StepCard = ({ step, index }) => {
   const { t } = useTranslation();
-  const direction = index % 2 === 0 ? "flex-row" : "flex-row-reverse";
+  const direction = index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse";
   return (
     <div className="items-start mb-10 mx-8">
       {/* Text */}
-      <div className={`flex gap-10 ${direction}`}>
+      <div className={`flex flex-col gap-10 ${direction}`}>
         {/* Image (optional) */}
         {step.image && (
-          <div className="rounded overflow-hidden max-w-[50%]">
+          <div className="rounded overflow-hidden lg:max-w-[50%]">
             <img
               src={step.image}
               alt={step.title}

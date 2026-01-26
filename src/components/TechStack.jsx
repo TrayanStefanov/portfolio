@@ -48,7 +48,7 @@ const TechStack = () => {
       variants={container}
       initial="hidden"
       animate="show"
-      className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-secondary text-sm md:text-base font-semibold"
+      className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-secondary text-sm lg:text-2xl  md:text-base font-semibold"
     >
       {tech.map(({ name, icon: Icon }) => (
         <motion.div
@@ -59,7 +59,7 @@ const TechStack = () => {
                      transition-colors hover:text-secondary
                      hover:drop-shadow-[0_0_6px_rgba(0,255,0,0.6)]"
         >
-          <Icon className="text-lg md:text-xl lg:text-4xl" />
+          <Icon className="text-lg md:text-xl lg:text-5xl" />
           <span>{name}</span>
         </motion.div>
       ))}

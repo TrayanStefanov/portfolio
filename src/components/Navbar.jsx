@@ -74,7 +74,7 @@ const Navbar = () => {
       >
         {/* Logo */}
         <div className="navbar-start h-60px lg:h-140px">
-          <Link to="/" className="flex items-center text-2xl font-bold lg:text-7xl">
+          <Link to="/" className="flex items-center text-2xl font-bold lg:text-6xl">
             <span className="text-secondary-content">
               {"<"}
             </span>
@@ -110,7 +110,7 @@ const Navbar = () => {
                 >
                   <Link
                     to={path}
-                    className={`relative inline-block hover:text-accent px-2 py-1 transition-colors font-bold ${
+                    className={`relative inline-block hover:text-secondary px-2 py-1 transition-colors font-bold lg:font-semibold rounded-xl ${
                       active ? "text-secondary" : "text-secondary-content"
                     }`}
                   >

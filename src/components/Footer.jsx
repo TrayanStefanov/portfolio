@@ -37,7 +37,7 @@ const Footer = () => {
       {/* Tooltip */}
       {tooltip && (
         <div
-          className="fixed bg-secondary-content text-primary px-2 py-1 rounded text-sm z-50 whitespace-nowrap select-none pointer-events-none"
+          className="fixed border border-secondary bg-primary text-secondary px-2 py-1 rounded text-sm z-50 whitespace-nowrap select-none pointer-events-none"
           style={{
             left: tooltipPos.x,
             top: tooltipPos.y,
