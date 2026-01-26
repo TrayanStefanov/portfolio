@@ -26,25 +26,22 @@ const LanguageSelector = () => {
   const current = languages.find((l) => l.code === language) || languages[0];
 
   return (
-    <div className="relative font-pf select-none justify-end rounded-none">
-      {/* ================= DESKTOP ================= */}
+    <div className="relative font-pf select-none justify-end rounded-xl">
       <div className="hidden md:block">
         <button
           onClick={() => setOpen((v) => !v)}
-          className="flex items-center gap-1 py-1 rounded-full text-secondary font-bold cursor-pointer
-                     text-lg lg:text-xl 2xl:text-2xl hover:text-accent transition-colors"
+          className="flex items-center gap-1 py-1 rounded-full text-secondary font-bold lg:font-semibold cursor-pointer
+                     text-lg md:text-lg lg:text-3xl hover:text-secondary transition-colors"
         >
           <span className="relative">
             {current.label}
 
-            {/* underline */}
             <span className="absolute left-0 -bottom-1 h-2px w-full bg-current rounded-full" />
           </span>
 
           <span className="ml-1">▾</span>
         </button>
 
-        {/* Dropdown */}
         <AnimatePresence>
           {open && (
             <motion.div
@@ -63,8 +60,8 @@ const LanguageSelector = () => {
                     className={`block w-full px-4 py-2 text-left font-bold transition-colors
                       ${
                         active
-                          ? "text-accent"
-                          : "text-secondary-content hover:text-accent"
+                          ? "text-secondary"
+                          : "text-secondary-content hover:text-secondary hover:cursor-pointer"
                       }`}
                   >
                     {lang.label}
@@ -76,7 +73,6 @@ const LanguageSelector = () => {
         </AnimatePresence>
       </div>
 
-      {/* ================= MOBILE ================= */}
       <div className="flex md:hidden items-center">
         {languages.map((lang, index) => {
           const active = lang.code === language;
@@ -100,7 +96,6 @@ const LanguageSelector = () => {
                   />
               </button>
 
-              {/* Divider */}
               {index === 0 && <div className="w-0.5 h-6 bg-secondary mx-2" />}
             </div>
           );
