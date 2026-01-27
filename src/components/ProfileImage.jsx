@@ -13,14 +13,14 @@ const ProfileImage = () => {
         <motion.div
           /* animate={{ scale: [1, 1.3, 1, 0.8, 1] }}
           transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }} */
-          className="absolute -left-3 -top-4 lg:-left-4 lg:-top-6 text-secondary opacity-80 hover:opacity-100 content-end cursor-default text-6xl/11 lg:text-[120px]"
+          className="absolute -left-3 -top-4 lg:-left-8 lg:-top-6 text-secondary opacity-80 hover:opacity-100 content-end cursor-default text-6xl/11 lg:text-[120px]"
         >
           {"<"}
         </motion.div>
         <motion.div
           animate={{ x: [-8, 0, -8] }}
           transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-          className="absolute -left-12 -top-14 lg:-left-18 lg:-top-38 text-secondary text-[160px] lg:text-[320px] font-thin select-none"
+          className="absolute -left-12 -top-14 lg:-left-24 lg:-top-38 text-secondary text-[160px] lg:text-[320px] font-thin select-none"
         >
           {"{"}
         </motion.div>
@@ -35,7 +35,7 @@ const ProfileImage = () => {
         <motion.div
           animate={{ x: [8, 0, 8] }}
           transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                    className="absolute -right-12 -top-14 lg:-right-18 lg:-top-38 text-secondary text-[160px] lg:text-[320px] font-thin select-none"
+                    className="absolute -right-12 -top-14 lg:-right-24 lg:-top-38 text-secondary text-[160px] lg:text-[320px] font-[20] select-none"
         >
           {"}"}
         </motion.div>
