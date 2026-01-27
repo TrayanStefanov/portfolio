@@ -17,6 +17,11 @@ i18next
       order: ["querystring", "localStorage", "navigator"],
       caches: ["localStorage"],
     },
+
+    backend: {
+      loadPath: import.meta.env.BASE_URL + "locales/{{lng}}/{{ns}}.json",
+    },
+
     react: { useSuspense: true },
   });
 
