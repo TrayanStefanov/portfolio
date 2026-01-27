@@ -29,16 +29,10 @@ const ExperienceText = () => {
                 tooltip={t("experience.keywords.leadership.tooltip")}
               />
             ),
-            operations: (
+            dynamic: (
               <KeywordContext
-                label={t("experience.keywords.operations.label")}
-                tooltip={t("experience.keywords.operations.tooltip")}
-              />
-            ),
-            experience: (
-              <KeywordContext
-                label={t("experience.keywords.experience.label")}
-                tooltip={t("experience.keywords.experience.tooltip")}
+                label={t("experience.keywords.dynamic.label")}
+                tooltip={t("experience.keywords.dynamic.tooltip")}
               />
             )
           }}
@@ -62,16 +56,10 @@ const ExperienceText = () => {
                 tooltip={t("experience.keywords.communication.tooltip")}
               />
             ),
-            creativity: (
+            clients: (
               <KeywordContext
-                label={t("experience.keywords.creativity.label")}
-                tooltip={t("experience.keywords.creativity.tooltip")}
-              />
-            ),
-            constraints: (
-              <KeywordContext
-                label={t("experience.keywords.constraints.label")}
-                tooltip={t("experience.keywords.constraints.tooltip")}
+                label={t("experience.keywords.clients.label")}
+                tooltip={t("experience.keywords.clients.tooltip")}
               />
             )
           }}
