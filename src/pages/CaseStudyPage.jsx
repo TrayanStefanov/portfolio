@@ -26,7 +26,7 @@ const CaseStudyPage = () => {
     <section className="max-w-6xl rounded-xs mx-auto mt-[2rem] lg:mt-[8rem] px-4 py-16">
       {/* Intro */}
       <header className="mb-8 mx-4 flex flex-col gap-10 items-center">
-        <h1 className="hidden lg:block text-3xl md:text-5xl font-bold text-secondary text-center mb-4">
+        <h1 className="hidden lg:block text-3xl md:text-5xl font-semibold text-secondary text-center mb-4">
           {project.title}
         </h1>
         <div>
