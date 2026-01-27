@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import StepCard from "../components/StepCard";
 import TechStack from "../components/TechStack";
+import ListBlock from "../components/ListBlock";
 
 const CaseStudyPage = () => {
   const { slug } = useParams();
@@ -106,6 +107,15 @@ const CaseStudyPage = () => {
                 {project.year}
               </p>
             )}
+            {project.role && (
+              <p>
+                <strong>
+                  {t("projects.caseStudy.role")}
+                  <span className="text-secondary">:</span>
+                </strong>{" "}
+                {project.role}
+              </p>
+            )}
           </div>
           {project.tech && project.tech.length > 0 && (
             <section className="hidden lg:block mb-6 mx-10">
@@ -138,6 +148,15 @@ const CaseStudyPage = () => {
                 <span className="text-secondary">:</span>
               </strong>{" "}
               {project.year}
+            </p>
+          )}
+          {project.role && (
+            <p>
+              <strong>
+                {t("projects.caseStudy.role")}
+                <span className="text-secondary">:</span>
+              </strong>{" "}
+              {project.role}
             </p>
           )}
         </div>
@@ -207,6 +226,17 @@ const CaseStudyPage = () => {
           <StepCard key={index} step={step} index={index} />
         ))}
       </section>
+      <h3 className="text-xl lg:text-4xl font-semibold text-base-200 m-8">
+        {project.summary.subtitle1}
+      </h3>
+
+      <ListBlock items={project.summary.chalenges || []} />
+
+      <h3 className="text-xl lg:text-4xl font-semibold text-base-200 m-8">
+        {project.summary.subtitle2}
+      </h3>
+
+      <ListBlock items={project.summary.learnings || []} />
     </section>
   );
 };
