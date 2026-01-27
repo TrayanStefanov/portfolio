@@ -7,7 +7,7 @@ import IntroSection from "../components/IntroSection";
 const Home = () => {
   return (
     <div className="overflow-hidden pt-20 lg:min-w-7xl min-h-[80vh] mx-8 text-center justify-items-center">
-      <div className="lg:flex lg:flex-row lg:w-7xl lg:gap-60 lg:min-h-[80vh] place-content-center">
+      <div className="flex flex-col lg:flex-row lg:w-7xl lg:gap-60 lg:min-h-[80vh] place-content-center">
         <IntroSection />
         <ProfileImage />
       </div>
