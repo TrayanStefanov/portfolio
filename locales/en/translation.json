@@ -71,7 +71,7 @@
                 "title": "Renovation company website",
                 "description": "A renovation company website that provides information about their services, projects, and project availability.",
                 "intro": "A clean, modern and professional website built to showcase renovation services and attract clients.",
-                "mainImage": "/itskovStroy.png",
+                "mainImage": "itskovStroy.png",
                 "slug": "itskov-stroy",
                 "category": "freelance",
                 "year": 2025,
