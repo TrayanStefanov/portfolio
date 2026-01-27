@@ -1,0 +1,394 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contacts": "Contacts"
+    },
+    "footer": {
+        "phone": "+359 8888888",
+        "email": {
+            "value1": "trayan",
+            "value2": "stefanov95"
+        },
+        "credits": "Designed, Developed and Deployed by Trayan Stefanov",
+        "social": "Socials",
+        "social-links": {
+            "linkedin": "https://www.linkedin.com/in/trayanstefanov",
+            "github": "http://www.github.com/TrayanStefanov"
+        }
+    },
+    "language": {
+        "bg": "Bulgarian",
+        "en": "English"
+    },
+    "contacts": {
+        "title": {
+            "value1": "Want to get in",
+            "value2": "touch",
+            "value3": "with me"
+        },
+        "desktopTitle": {
+            "value1": "Got a ",
+            "value2": "project",
+            "value3": "Want to make it a ",
+            "value4": "reality"
+        },
+        "phone": "+359 8888888",
+        "phoneLabel": "Call me between 9:00-18:00",
+        "viber": "+359 8888888",
+        "viberLabel": "Message me on Viber",
+        "email": {
+            "value1": "trayan",
+            "value2": "stefanov95"
+        },
+        "emailLabel": "Email me at",
+        "linkedin": "https://www.linkedin.com/in/trayanstefanov",
+        "linkedinLabel": "Connect with me on",
+        "github": "http://www.github.com/TrayanStefanov",
+        "githubLabel": "Check out all of my projects at"
+    },
+    "home": {
+        "intro": {
+            "value1": "Hello",
+            "value2": "I'm Trayan",
+            "value3": "Full-Stack Developer",
+            "cta": {
+                "contact": "Contact Me",
+                "cv": "Download CV"
+            }
+        },
+        "about": {
+            "title": "About Me",
+            "description": "I am a passionate software developer focused on building modern, fast and scalable web applications. I enjoy turning complex problems into clean and intuitive digital experiences.",
+            "cta": "Read More"
+        }
+    },
+    "projects": {
+        "title": "Latest Projects",
+        "items": [
+            {
+                "title": "Renovation company website",
+                "description": "A renovation company website that provides information about their services, projects, and project availability.",
+                "intro": "A clean, modern and professional website built to showcase renovation services and attract clients.",
+                "mainImage": "/itskovStroy.png",
+                "slug": "itskov-stroy",
+                "category": "freelance",
+                "year": 2025,
+                "role": "UX research, design, development, deployment",
+                "tech": [
+                    "React",
+                    "Node.js",
+                    "Tailwind",
+                    "Git",
+                    "HTML",
+                    "CSS",
+                    "figma"
+                ],
+                "links": {
+                    "live": "https://itskovstroy.com",
+                    "demo": null,
+                    "github": "https://github.com/TrayanStefanov/Freelance-IckoStroI"
+                },
+                "steps": [
+                    {
+                        "title": "Problem",
+                        "content": "The company had a number of completed large-scale projects. They wanted to showcase their work to potential clients and the services they offer.",
+                        "notes": [
+                            "Client had a concrete vision of what they wanted to use the website for, which made it easier to fulfill their needs."
+                        ],
+                        "image": "/itskovStroy.png"
+                    },
+                    {
+                        "title": "Research & Design",
+                        "content": "Researched similar company websites including a few that the client fancied. Designed an initial concept for the website.",
+                        "notes": [
+                            "Discussed the initial concept with the client and made adjustments based on their feedback.",
+                            "Used figma to design the logo of the company for both EN and BG.",
+                            "Provided client with a number of color palettes to choose from for the website. "
+                        ],
+                        "image": "/logo_en.png"
+                    },
+                    {
+                        "title": "Development & Initial Demo Deployment",
+                        "content": "Built a responsive mobile-first frontend using React, Tailwind and daisyUI. Set up a Noje.js Express backend wtih CRUD functionality to handle project content manipulation and store all assets and data in cloud storage - MongoDB and Cloudinary. ",
+                        "notes": [
+                            "Implemented a simple but effective admin dashboard to create and manage project content.",
+                            "Set up localisation support for BG/EN languages. Bulgarian text content was provided by the client. English content was translated by me and approved by the client.",
+                            "Created simple concept animations using framer-motion to demonstrate to the client.",
+                            "Deployed a demo version of the website on onrender.com for the client to see and provide feedback."
+                        ]
+                    },
+                    {
+                        "title": "Client feedback & Second Demo Deployment",
+                        "content": "The client provided feedback on the website and asked for some adjustments. He selected an animation style for each page from the ones I provided and asked for a few customizations.",
+                        "notes": [
+                            "Customised the animation style for each page based on client preferences.",
+                            "Small style adjustments to components and pages were made to the website based on client feedback.",
+                            "Updated contact page to showcase the company's area of operation.",
+                            "Deployed a second demo version of the website on onrender.com for the client to see and provide feedback."
+                        ]
+                    },
+                    {
+                        "title": "Domain, Hosting & Social Media Setup",
+                        "content": "Met up with the client and walked him through domain purchase, registration and hosting plan selection. Discussed what social media platforms are best to use considering the client's needs while also taking into account which platforms are most popular in their local market.",
+                        "notes": [
+                            "Set up a Superhosting account and purchased the domain ickovstroy.com and hosting plan.",
+                            "Set a company LinkedIn, Facebook and Instagram page for the company. Added backlinks from the website to the social media pages and vice versa. Provided the client with the credentials so that he can manage them."
+                        ],
+                        "image": "/itskovStroy.png"
+                    },
+                    {
+                        "title": "Deployment & SEO",
+                        "content": "Deployed the final version of the website on itskovstroy.com and set up a Google Analytics account to track website usage.",
+                        "notes": [
+                            "Optimised the website for search engines and made it more user-friendly.",
+                            "Added meta tags to the HTML head to improve SEO.",
+                            "Provided the client with a number of SEO suggestions and suggested keywords for the website before adding them.",
+                            "Created a custom QR code for the company's website and provided it to the client for the making of business cards, uniforms and vehicle branding."
+                        ],
+                        "image": "/QR.png"
+                    }
+                ],
+                "summary": {
+                    "title": "Project Summary",
+                    "subtitle1": "Challenges I faced",
+                    "subtitle2": "What I learned",
+                    "chalenges": [
+                        "Color palette selection",
+                        "Providing a simple, user friendly content management system that does exactly what the client wants without confusing the user with needless complexity"
+                    ],
+                    "learnings": [
+                        "Designing animations with framer-motion",
+                        "Implementing a simple admin dashboard",
+                        "Creating a custom QR code",
+                        "Logo design and color palette selection"
+                    ]
+                }
+            },
+            {
+                "title": "Cashback services website",
+                "description": "A cashback platform that helps users get back money on previous purchases, overaid taxes and deals",
+                "intro": "A cashback platform simplifying complex government filing processes for private and corporate clients.",
+                "mainImage": "/profitRecovery.png",
+                "slug": "profit-recovery",
+                "category": "freelance",
+                "year": 2025,
+                "role": "UX research, design, development, deployment",
+                "tech": [
+                    "React",
+                    "Node.js",
+                    "Tailwind",
+                    "Git",
+                    "HTML"
+                ],
+                "links": {
+                    "live": "https://profitrecoverybg.eu/",
+                    "demo": null,
+                    "github": "https://github.com/TrayanStefanov/Freelance-ProfitRecovery"
+                },
+                "steps": [
+                    {
+                        "title": "Problem",
+                        "content": "The client was starting his own accounting business and needed a website to showcase their services and provide a simple way for potential clients to get in touch. ",
+                        "notes": [
+                            "The client wanted a website that would be user-friendly and easily navigable.",
+                            "The client wanted the website to be built in WordPress."
+                        ],
+                        "image": "/profitRecovery.png"
+                    },
+                    {
+                        "title": "Research & Wordpress Design",
+                        "content": "Reviewed the code and design of a similar foreign company website that the client provided. His requirements were to create a website as close as possible to the one provided.",
+                        "notes": [
+                            "Logo and color palette were provided by the client.",
+                            "Created the initial version of the website using Wordpress.",
+                            "Hosted the website for free so that the client can be kept upto date with the latest changes.",
+                            "Designed a simple calculator to make it easier for the users to calculate the potential cashback amount."
+                        ],
+                        "image": "/profitback_english.png"
+                    },
+                    {
+                        "title": "First round of customer feedback",
+                        "content": "The client provided feedback on the website and asked for some additions - Localization, SEO optimisation and CMS for blog posts.",
+                        "notes": [
+                            "The wordpress CMS was not suitable for the client's needs. As a result, the client asked for a custom CMS.",
+                            "Set up localisation support for BG/EN languages. Bulgarian text content was provided by the client. English content was translated by me and edited by the client."
+                        ]
+                    },
+                    {
+                        "title": "Refactoring to a MERN stack",
+                        "content": "Reserached for a suitable CMS and decided that the best option for the clients budget was to create a custom CMS. And that led me to choosing the MERN stack.",
+                        "notes": [
+                            "Set up a Noje.js Express server to act as a backend for the website basic CMS.",
+                            "Set up a MongoDB database to store all articles the client wanted to publish to boost his SEO score.",
+                            "Creted a mobile-first responsive frontend using React and Tailwind.",
+                            "Deployed a second demo version of the website on onrender.com for the client to see and provide feedback."
+                        ]
+                    },
+                    {
+                        "title": "Deployment & SEO",
+                        "content": "Deployed the final version of the website on profitrecoverybg.eu and optimised it for search engines.",
+                        "notes": [
+                            "Client provided his already bought domain and hosting plan.",
+                            "Added meta tags to the HTML head to improve SEO.",
+                            "Added keywords according to the client's requirements."
+                        ]
+                    }
+                ],
+                "summary": {
+                    "title": "Project Summary",
+                    "subtitle1": "Challenges I faced",
+                    "subtitle2": "What I learned",
+                    "chalenges": [
+                        "Dabbling in Wordpress",
+                        "Learning how to create a custom CMS.",
+                        "Language localization",
+                        "Hosting, domain management and deployment",
+                        "Understanding SEO"
+                    ],
+                    "learnings": [
+                        "I learned quite a bit about the Wordpress platform. And it's many addons and limitations.",
+                        "I was exposed to a different tech stack - MERN and how to work with it. Quite an exciting experience.",
+                        "I gained an understanding of how to create a custom CMS/admin panel.",
+                        "Deploying a website while keeping in mind all the facets of hosting and domain management. It was a daunting but rewarding experience.",
+                        "I learned alot about SEO and about how search engines 'see' websites."
+                    ]
+                }
+            },
+            {
+                "title": "Meat delicacies website",
+                "description": "A website that sells meat delicacies. The website features a user-friendly interface, easy navigation, and a secure payment system.",
+                "intro": "An e-commerce website designed to showcase and sell premium meat products online.",
+                "mainImage": "/masterMeats.png",
+                "slug": "master-meats",
+                "category": "freelance",
+                "year": 2023,
+                "tech": [
+                    "React",
+                    "Node.js",
+                    "Tailwind",
+                    "Github"
+                ],
+                "links": {
+                    "live": null,
+                    "demo": "https://mastermeats-frontend.onrender.com/",
+                    "github": "https://github.com/TrayanStefanov/MasterMeats"
+                },
+                "steps": [
+                    {
+                        "title": "Product Structure & Planning",
+                        "content": "Defined product categories, pricing logic, and purchase flow."
+                    },
+                    {
+                        "title": "UI Design",
+                        "content": "Designed a visually rich interface highlighting product quality.",
+                        "image": "/masterMeats.png"
+                    },
+                    {
+                        "title": "Checkout & Integration",
+                        "content": "Implemented secure checkout and order handling."
+                    }
+                ]
+            }
+        ],
+        "page": {
+            "titlePart1": "Latest",
+            "titlePart2": "Projects",
+            "subtitle": "Some of my most recent work"
+        },
+        "freelance": {
+            "title": "Freelance Projects"
+        },
+        "personal": {
+            "title": "Personal Projects"
+        },
+        "cta": "View Details",
+        "caseStudy": {
+            "projectNotFound": "Project not found",
+            "year": "Year",
+            "role": "Role",
+            "category": "Category",
+            "tech": "Tech Stack",
+            "notes": "Notes",
+            "links": {
+                "live": "Live Website",
+                "demo": "Demo Website",
+                "github": "GitHub Repo"
+            },
+            "breakdown": "Project Breakdown"
+        }
+    },
+    "about": {
+        "title": "About Me",
+        "subtitle": "My journey in web development.",
+        "part1": "I am a self-taught developer who broke into the tech world through online tutorials, deep-diving into documentation, and countless hours of hands-on practice. Over time, I have built a range of Full-Stack projects using the <mern>MERN stack</mern>. I pride myself on having a solid foundation in web development, driven by a constant curiosity to understand not just how code works, but the underlying logic behind why it is designed that way. ",
+        "part2": "In addition to my personal projects, I have experience as a <freelance>freelancer</freelance>, where I developed and deployed custom software solutions for clients.",
+        "part3": "My motivation for pursuing programming professionally is simple: I find genuine fulfillment in building web applications that make people’s lives <easier>easier and less frustrating</easier>. I place a strong emphasis on <reliability>reliability</reliability>, <scalability>scalability</scalability>, and a seamless <ux>user experience</ux>. Currently, my goal is to sharpen my Full-Stack expertise by focusing on <AI> AI integration</AI> and <Cloud>Cloud technologies</Cloud>, while continuing to push my limits with increasingly complex projects.",
+        "keywords": {
+            "mern": {
+                "label": "MERN stack",
+                "tooltip": "JavaScript, React, Node.js, and MongoDB."
+            },
+            "reliability": {
+                "label": "reliability",
+                "tooltip": "Built authentication and order systems for real-world applications."
+            },
+            "scalability": {
+                "label": "scalability",
+                "tooltip": "Designed systems that can handle growing numbers of users and data."
+            },
+            "ux": {
+                "label": "user experience",
+                "tooltip": "Focused on delivering a smooth and satisfying user experience."
+            },
+            "freelance": {
+                "label": "freelancer",
+                "tooltip": "View my freelance projects."
+            },
+            "easier": {
+                "label": "easier and less frustrating",
+                "tooltip": "Built tools that take off good chunk of the pressure and stress that life can bring."
+            },
+            "AI": {
+                "label": "AI integration",
+                "tooltip": "Integrating AI into existing systems and applications for a richer and smoother user experience."
+            },
+            "Cloud": {
+                "label": "Cloud technologies",
+                "tooltip": "Learning and gaining experience with AWS, Azure, and GCP for completely cloud-based solutions."
+            }
+        }
+    },
+    "experience": {
+        "title": " Experience Beyond IT",
+        "part1": "Before transitioning into web development, I spent several years in <leadership>leadership</leadership> roles within the retail sector as a Store manager. I was responsible for overseeing <dynamic>dynamic workflows</dynamic>, ensuring smooth daily operations, and overachieving store KPIs.",
+        "part2": "This leadership background has fundamentally shaped my approach to programming today. I am comfortable taking full <ownership>ownership</ownership> of my work, staying composed under pressure, and delivering high-quality results within tight deadlines. Furthermore, my time in the retail industry helped me polish my <communication>communication</communication> skills and gave me a unique perspective on understanding and anticipating <clients>client needs</clients>.",
+        "keywords": {
+            "leadership": {
+                "label": "leadership",
+                "tooltip": "Led teams of 20–50+ people and fostered goal-oriented environment."
+            },
+            "clients": {
+                "label": "client needs",
+                "tooltip": "This has led me adapt to a client first mindset."
+            },
+            "dynamic": {
+                "label": "dynamic workflows",
+                "tooltip": "Constantly changing situations, everchanging expectations and fast-paced environments."
+            },
+            "ownership": {
+                "label": "ownership",
+                "tooltip": "I take full responsibility for the quality of my work from planning to execution."
+            },
+            "communication": {
+                "label": "communicating effectively",
+                "tooltip": "Clear and concise communication with clients so as to better understand their wants and needs."
+            },
+            "constraints": {
+                "label": "real-world factors",
+                "tooltip": "Factors such as time constraints, budget, client expectations and target audience."
+            }
+        }
+    }
+}
