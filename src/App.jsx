@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { Route, Routes } from "react-router";
+import { Route, Routes, Navigate } from "react-router";
 
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
@@ -25,6 +25,7 @@ const App = () => {
         }
       >
         <Routes>
+          <Route path="/portfolio" element={<Navigate to="/" replace />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
