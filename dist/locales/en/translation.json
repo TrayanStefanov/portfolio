@@ -127,7 +127,8 @@
                             "Small style adjustments to components and pages were made to the website based on client feedback.",
                             "Updated contact page to showcase the company's area of operation.",
                             "Deployed a second demo version of the website on onrender.com for the client to see and provide feedback."
-                        ]
+                        ],
+                        "image": "services.png"
                     },
                     {
                         "title": "Domain, Hosting & Social Media Setup",
@@ -136,7 +137,7 @@
                             "Set up a Superhosting account and purchased the domain ickovstroy.com and hosting plan.",
                             "Set a company LinkedIn, Facebook and Instagram page for the company. Added backlinks from the website to the social media pages and vice versa. Provided the client with the credentials so that he can manage them."
                         ],
-                        "image": "itskovStroy.png"
+                        "image": "stroyAbout.png"
                     },
                     {
                         "title": "Deployment & SEO",
@@ -234,7 +235,8 @@
                             "Client provided his already bought domain and hosting plan.",
                             "Added meta tags to the HTML head to improve SEO.",
                             "Added keywords according to the client's requirements."
-                        ]
+                        ],
+                        "image": "cashback.png"
                     }
                 ],
                 "summary": {
