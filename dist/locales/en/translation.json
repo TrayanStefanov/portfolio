@@ -71,7 +71,7 @@
                 "title": "Renovation company website",
                 "description": "A renovation company website that provides information about their services, projects, and project availability.",
                 "intro": "A clean, modern and professional website built to showcase renovation services and attract clients.",
-                "mainImage": "/itskovStroy.png",
+                "mainImage": "itskovStroy.png",
                 "slug": "itskov-stroy",
                 "category": "freelance",
                 "year": 2025,
@@ -97,7 +97,7 @@
                         "notes": [
                             "Client had a concrete vision of what they wanted to use the website for, which made it easier to fulfill their needs."
                         ],
-                        "image": "/itskovStroy.png"
+                        "image": "itskovStroy.png"
                     },
                     {
                         "title": "Research & Design",
@@ -107,7 +107,7 @@
                             "Used figma to design the logo of the company for both EN and BG.",
                             "Provided client with a number of color palettes to choose from for the website. "
                         ],
-                        "image": "/logo_en.png"
+                        "image": "logo_en.png"
                     },
                     {
                         "title": "Development & Initial Demo Deployment",
@@ -136,7 +136,7 @@
                             "Set up a Superhosting account and purchased the domain ickovstroy.com and hosting plan.",
                             "Set a company LinkedIn, Facebook and Instagram page for the company. Added backlinks from the website to the social media pages and vice versa. Provided the client with the credentials so that he can manage them."
                         ],
-                        "image": "/itskovStroy.png"
+                        "image": "itskovStroy.png"
                     },
                     {
                         "title": "Deployment & SEO",
@@ -147,7 +147,7 @@
                             "Provided the client with a number of SEO suggestions and suggested keywords for the website before adding them.",
                             "Created a custom QR code for the company's website and provided it to the client for the making of business cards, uniforms and vehicle branding."
                         ],
-                        "image": "/QR.png"
+                        "image": "QR.png"
                     }
                 ],
                 "summary": {
@@ -170,7 +170,7 @@
                 "title": "Cashback services website",
                 "description": "A cashback platform that helps users get back money on previous purchases, overaid taxes and deals",
                 "intro": "A cashback platform simplifying complex government filing processes for private and corporate clients.",
-                "mainImage": "/profitRecovery.png",
+                "mainImage": "profitRecovery.png",
                 "slug": "profit-recovery",
                 "category": "freelance",
                 "year": 2025,
@@ -195,7 +195,7 @@
                             "The client wanted a website that would be user-friendly and easily navigable.",
                             "The client wanted the website to be built in WordPress."
                         ],
-                        "image": "/profitRecovery.png"
+                        "image": "profitRecovery.png"
                     },
                     {
                         "title": "Research & Wordpress Design",
@@ -206,7 +206,7 @@
                             "Hosted the website for free so that the client can be kept upto date with the latest changes.",
                             "Designed a simple calculator to make it easier for the users to calculate the potential cashback amount."
                         ],
-                        "image": "/profitback_english.png"
+                        "image": "profitback_english.png"
                     },
                     {
                         "title": "First round of customer feedback",
@@ -260,7 +260,7 @@
                 "title": "Meat delicacies website",
                 "description": "A website that sells meat delicacies. The website features a user-friendly interface, easy navigation, and a secure payment system.",
                 "intro": "An e-commerce website designed to showcase and sell premium meat products online.",
-                "mainImage": "/masterMeats.png",
+                "mainImage": "masterMeats.png",
                 "slug": "master-meats",
                 "category": "freelance",
                 "year": 2023,
@@ -283,7 +283,7 @@
                     {
                         "title": "UI Design",
                         "content": "Designed a visually rich interface highlighting product quality.",
-                        "image": "/masterMeats.png"
+                        "image": "masterMeats.png"
                     },
                     {
                         "title": "Checkout & Integration",
