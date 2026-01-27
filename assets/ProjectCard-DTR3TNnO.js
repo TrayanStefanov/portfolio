@@ -1,4 +1,4 @@
-import{a as r,u as i,j as t,l as c,n as d,o as x,p as m,q as u,s as g,t as h}from"./index-B4x8eyp9.js";import{S as p}from"./index-Div2A9hP.js";const b={HTML:h,CSS:g,JavaScript:u,"Node.js":m,React:x,Tailwind:p,Git:d,GitHub:c},N=({project:s})=>{const l=r(),{t:o}=i(),a=()=>{l(`/projects/${s.slug||"coming-soon"}`)};return t.jsxs("div",{role:"button",tabIndex:0,onClick:a,onKeyDown:e=>e.key==="Enter"&&a(),className:`\r
+import{a as r,u as i,j as t,l as c,n as d,o as x,p as m,q as u,s as g,t as h}from"./index-BR7m-h4W.js";import{S as p}from"./index-Dz88Edf2.js";const b={HTML:h,CSS:g,JavaScript:u,"Node.js":m,React:x,Tailwind:p,Git:d,GitHub:c},N=({project:s})=>{const l=r(),{t:o}=i(),a=()=>{l(`/projects/${s.slug||"coming-soon"}`)};return t.jsxs("div",{role:"button",tabIndex:0,onClick:a,onKeyDown:e=>e.key==="Enter"&&a(),className:`\r
         cursor-pointer overflow-hidden\r
         border border-white/5\r
         shadow-md hover:shadow-lg\r
