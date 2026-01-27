@@ -33,7 +33,30 @@ const AboutText = () => {
                 label={t("about.keywords.mern.label")}
                 tooltip={t("about.keywords.mern.tooltip")}
               />
-            ),
+            )
+          }}
+        />
+      </p>
+
+      {/* Part 2 */}
+      <p className="text-base-200 m-6 text-base md:text-lg leading-relaxed">
+        <Trans
+          i18nKey="about.part2"
+          components={{
+            freelance: (
+              <KeywordContext
+                label={t("about.keywords.freelance.label")}
+                tooltip={t("about.keywords.freelance.tooltip")}
+              />
+            )
+          }}
+        />
+      </p>
+
+      <p className="text-base-200 mx-6 text-base md:text-lg leading-relaxed">
+        <Trans
+          i18nKey="about.part3"
+          components={{
             reliability: (
               <KeywordContext
                 label={t("about.keywords.reliability.label")} // visible word
@@ -46,38 +69,10 @@ const AboutText = () => {
                 tooltip={t("about.keywords.scalability.tooltip")}
               />
             ),
-            usability: (
-              <KeywordContext
-                label={t("about.keywords.usability.label")}
-                tooltip={t("about.keywords.usability.tooltip")}
-              />
-            ),
             ux: (
               <KeywordContext
                 label={t("about.keywords.ux.label")}
                 tooltip={t("about.keywords.ux.tooltip")}
-              />
-            ),
-          }}
-        />
-      </p>
-
-      {/* Part 2 */}
-      <p className="text-base-200 mx-6 text-base md:text-lg leading-relaxed">
-        <Trans
-          i18nKey="about.part2"
-          components={{
-            goal: (
-              <KeywordContext
-                label={t("about.keywords.goal.label")}
-                tooltip={t("about.keywords.goal.tooltip")}
-                side="left"
-              />
-            ),
-            thoughtful: (
-              <KeywordContext
-                label={t("about.keywords.thoughtful.label")}
-                tooltip={t("about.keywords.thoughtful.tooltip")}
               />
             ),
             easier: (
@@ -97,7 +92,7 @@ const AboutText = () => {
                 label={t("about.keywords.Cloud.label")}
                 tooltip={t("about.keywords.Cloud.tooltip")}
               />
-            ),
+            )
           }}
         />
       </p>
