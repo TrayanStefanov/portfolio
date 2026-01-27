@@ -27,7 +27,7 @@ const ProfileImage = () => {
         {/* Profile Image */}
         <div className="relative w-46 h-46 lg:w-[320px] lg:h-[320px] content-end rounded-full border-2 border-secondary bg-radial from-accent from-40% to-primary to-100% shadow-xl">
           <img
-            src={import.meta.env.BASE_URL + "profile.png"} // <-- replace with your image path
+            src={"/portfolio/" + "profile.png"} // <-- replace with your image path
             alt="Profile"
             className="w-32 h-44 lg:w-[260px] lg:h-[350px] justify-self-center mt-2 object-cover"
           />

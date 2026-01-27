@@ -45,7 +45,7 @@ const ProjectCard = ({ project }) => {
       "
     >
       <img
-        src={import.meta.env.BASE_URL + project.mainImage}
+        src={"/portfolio/" + project.mainImage}
         alt={project.title}
         loading="lazy"
         className="w-full h-44 md:h-60 object-cover"
