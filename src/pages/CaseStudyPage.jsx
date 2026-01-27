@@ -32,7 +32,7 @@ const CaseStudyPage = () => {
         <div>
           {project.mainImage && (
             <img
-              src={project.mainImage}
+              src={import.meta.env.BASE_URL + project.mainImage}
               alt={project.title}
               className="hidden lg:block rounded border border-white/10"
             />
@@ -77,7 +77,7 @@ const CaseStudyPage = () => {
         <div>
           {project.mainImage && (
             <img
-              src={project.mainImage}
+              src={import.meta.env.BASE_URL + project.mainImage}
               alt={project.title}
               className="rounded border lg:hidden mb-4 border-white/10"
             />

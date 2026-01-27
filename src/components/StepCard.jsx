@@ -11,7 +11,7 @@ const StepCard = ({ step, index }) => {
         {step.image && (
           <div className="rounded overflow-hidden lg:max-w-[50%]">
             <img
-              src={step.image}
+              src={import.meta.env.BASE_URL + step.image}
               alt={step.title}
               className="w-full object-cover"
               loading="lazy"
