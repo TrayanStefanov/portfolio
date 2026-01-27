@@ -19,7 +19,7 @@ const ProjectsPage = () => {
     <section className="max-w-6xl lg:mt-12 mx-auto px-4 py-16">
       {/* Page Header */}
       <header className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-white">
+        <h1 className="text-4xl 2xl:text-5xl font-bold text-white">
           <span className="underline underline-offset-[10px] decoration-2 decoration-secondary">{t("projects.page.titlePart1")}</span>{" "}
           <span className="text-secondary underline underline-offset-[10px] decoration-2 decoration-base-100">
             {t("projects.page.titlePart2")}
@@ -30,7 +30,7 @@ const ProjectsPage = () => {
 
       {/* Freelance Projects */}
       <div className="mb-20">
-        <h2 className="text-3xl lg:text-4xl font-semibold text-base-200 mb-6 justify-self-center">
+        <h2 className="text-3xl 2xl:text-4xl font-semibold text-base-200 mb-6 justify-self-center">
           <span className="text-secondary">{"<"}</span> 
           {t("projects.freelance.title")}
           <span className="text-secondary">{">"}</span>
@@ -45,7 +45,7 @@ const ProjectsPage = () => {
 
       {/* Personal Projects */}
       <div>
-        <h2 className="text-3xl font-semibold text-base-200 mb-6 justify-self-center">
+        <h2 className="text-3xl 2xl:text-4xl font-semibold text-base-200 mb-6 justify-self-center">
           <span className="text-secondary">{"<"}</span> 
           {t("projects.personal.title")}
           <span className="text-secondary">{">"}</span>

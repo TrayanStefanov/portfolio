@@ -31,7 +31,7 @@ const LanguageSelector = () => {
         <button
           onClick={() => setOpen((v) => !v)}
           className="flex items-center gap-1 py-1 rounded-full text-secondary font-bold lg:font-semibold cursor-pointer
-                     text-lg md:text-lg lg:text-3xl hover:text-secondary transition-colors"
+                     text-lg md:text-lg 2xl:text-3xl hover:text-secondary transition-colors"
         >
           <span className="relative">
             {current.label}

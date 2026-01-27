@@ -9,7 +9,7 @@ const StepCard = ({ step, index }) => {
       <div className={`flex flex-col gap-10 ${direction}`}>
         {/* Image (optional) */}
         {step.image && (
-          <div className="rounded overflow-hidden lg:max-w-[50%]">
+          <div className="rounded overflow-hidden lg:max-w-[40%]">
             <img
               src={"/portfolio/" + step.image}
               alt={step.title}

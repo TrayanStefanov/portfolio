@@ -14,17 +14,17 @@ const AboutText = () => {
       className="max-w-4xl mx-4 mt-8 text-center text-secondary justify-self-center"
     >
       {/* Title */}
-      <h1 className="text-3xl md:text-5xl font-bold mb-4 lg:mb-8 underline underline-offset-8 decoration-1 decoration-secondary">
+      <h1 className="text-3xl lg:text-4xl 2xl:text-5xl font-bold mb-4 lg:mb-8 underline underline-offset-8 decoration-1 decoration-secondary">
         {t("about.title")}
       </h1>
 
       {/* Subtitle */}
-      <p className="text-xl lg:text-2xl mb-6 text-secondary/70">
+      <p className="text-xl 2xl:text-2xl mb-6 text-secondary/70">
         {t("about.subtitle")}
       </p>
 
       {/* Part 1 */}
-      <p className="text-base-200 mx-6 text-base md:text-lg leading-relaxed">
+      <p className="text-base-200 mx-6 text-base 2xl:text-lg leading-relaxed">
         <Trans
           i18nKey="about.part1"
           components={{

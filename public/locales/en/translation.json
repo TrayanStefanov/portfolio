@@ -111,7 +111,7 @@
                     },
                     {
                         "title": "Development & Initial Demo Deployment",
-                        "content": "Built a responsive mobile-first frontend using React, Tailwind and daisyUI. Set up a Noje.js Express backend wtih CRUD functionality to handle project content manipulation and store all assets and data in cloud storage - MongoDB and Cloudinary. ",
+                        "content": "Built a responsive mobile-first frontend using React, Tailwind and daisyUI. Set up a Node.js Express backend wtih CRUD functionality to handle project content manipulation and store all assets and data in cloud storage - MongoDB and Cloudinary. ",
                         "notes": [
                             "Implemented a simple but effective admin dashboard to create and manage project content.",
                             "Set up localisation support for BG/EN languages. Bulgarian text content was provided by the client. English content was translated by me and approved by the client.",
@@ -147,7 +147,7 @@
                             "Provided the client with a number of SEO suggestions and suggested keywords for the website before adding them.",
                             "Created a custom QR code for the company's website and provided it to the client for the making of business cards, uniforms and vehicle branding."
                         ],
-                        "image": "QR.png"
+                        "image": "QR2.png"
                     }
                 ],
                 "summary": {
@@ -203,7 +203,7 @@
                         "notes": [
                             "Logo and color palette were provided by the client.",
                             "Created the initial version of the website using Wordpress.",
-                            "Hosted the website for free so that the client can be kept upto date with the latest changes.",
+                            "Hosted the website for free so that the client can be kept up to date with the latest changes.",
                             "Designed a simple calculator to make it easier for the users to calculate the potential cashback amount."
                         ],
                         "image": "profitback_english.png"
@@ -220,11 +220,12 @@
                         "title": "Refactoring to a MERN stack",
                         "content": "Reserached for a suitable CMS and decided that the best option for the clients budget was to create a custom CMS. And that led me to choosing the MERN stack.",
                         "notes": [
-                            "Set up a Noje.js Express server to act as a backend for the website basic CMS.",
+                            "Set up a Node.js Express server to act as a backend for the website basic CMS.",
                             "Set up a MongoDB database to store all articles the client wanted to publish to boost his SEO score.",
                             "Creted a mobile-first responsive frontend using React and Tailwind.",
                             "Deployed a second demo version of the website on onrender.com for the client to see and provide feedback."
-                        ]
+                        ],
+                        "image": "calc.png"
                     },
                     {
                         "title": "Deployment & SEO",
@@ -252,7 +253,7 @@
                         "I was exposed to a different tech stack - MERN and how to work with it. Quite an exciting experience.",
                         "I gained an understanding of how to create a custom CMS/admin panel.",
                         "Deploying a website while keeping in mind all the facets of hosting and domain management. It was a daunting but rewarding experience.",
-                        "I learned alot about SEO and about how search engines 'see' websites."
+                        "I learned a lot about SEO and about how search engines 'see' websites."
                     ]
                 }
             },

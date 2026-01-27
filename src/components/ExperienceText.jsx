@@ -14,12 +14,12 @@ const ExperienceText = () => {
       className="max-w-4xl mx-4 mt-8 text-center text-secondary justify-self-center"
     >
       {/* Title */}
-      <h1 className="text-xl lg:text-2xl mb-6 text-secondary/70">
+      <h1 className="text-xl 2xl:text-2xl mb-6 text-secondary/70">
         {t("experience.title")}
       </h1>
 
       {/* Part 1 */}
-      <p className="text-base-200 mx-6 text-base md:text-lg leading-relaxed">
+      <p className="text-base-200 mx-6 text-base 2xl:text-lg leading-relaxed">
         <Trans
           i18nKey="experience.part1"
           components={{

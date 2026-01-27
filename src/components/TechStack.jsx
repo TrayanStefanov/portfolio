@@ -59,7 +59,7 @@ const TechStack = () => {
                      transition-colors hover:text-secondary
                      hover:drop-shadow-[0_0_6px_rgba(0,255,0,0.6)]"
         >
-          <Icon className="text-lg md:text-xl lg:text-5xl" />
+          <Icon className="text-lg md:text-xl lg:text-3xl 2xl:text-5xl" />
           <span>{name}</span>
         </motion.div>
       ))}
