@@ -48,7 +48,7 @@ const TechStack = () => {
       variants={container}
       initial="hidden"
       animate="show"
-      className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-secondary text-sm lg:text-2xl  md:text-base font-semibold"
+      className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-secondary mx-1 text-sm lg:text-2xl  md:text-base font-semibold"
     >
       {tech.map(({ name, icon: Icon }) => (
         <motion.div

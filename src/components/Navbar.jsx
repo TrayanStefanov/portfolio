@@ -88,7 +88,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav Links */}
-        <div className="navbar-end w-[70vw] hidden md:flex font-pf">
+        <div className="navbar-end w-[70vw] hidden lg:flex font-pf">
           <motion.ul
             className="menu menu-horizontal md:text-lg lg:text-xl 2xl:text-3xl text-secondary-content items-center relative"
             initial="hidden"
@@ -136,7 +136,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile burger */}
-        <div className="block md:hidden ">
+        <div className="block lg:hidden ">
           <button
             className="relative z-50 p-1 border-2 border-secondary rounded-md"
             onClick={() => setIsOpen(!isOpen)}

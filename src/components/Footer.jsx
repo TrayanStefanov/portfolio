@@ -49,7 +49,7 @@ const Footer = () => {
       )}
 
       <footer
-        className={`footer bg-primary text-primary justify-around py-2.5 lg:p-6 px-15 border-t-2 border-secondary block ${contactsStyle}`}
+        className={`footer bg-primary text-primary justify-around py-2.5 lg:p-6 px-4 lg:px-15 border-t-2 border-secondary block ${contactsStyle}`}
       >
         <div className="flex flex-row flex-wrap justify-center w-full mx-auto pb-2.5 md:px-4 gap-4">
           {/* Phone */}

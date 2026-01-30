@@ -12,7 +12,7 @@ const AboutSection = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="max-w-4xl mx-auto mt-8 lg:mt-0 text-center"
+      className="max-w-4xl mx-2 lg:mx-auto mt-8 lg:mt-0 text-center"
     >
       <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-base-200 mb-6 underline underline-offset-8 decoration-1 lg:underline-offset-16 lg:decoration-2 decoration-secondary">
         {t("home.about.title")}

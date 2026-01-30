@@ -24,7 +24,7 @@ const AboutText = () => {
       </p>
 
       {/* Part 1 */}
-      <p className="text-base-200 mx-6 text-base 2xl:text-lg leading-relaxed">
+      <p className="text-base-200 mx-1 sm:mx-2 md:mx-4 lg:mx-6 text-base 2xl:text-lg leading-relaxed">
         <Trans
           i18nKey="about.part1"
           components={{
@@ -39,7 +39,7 @@ const AboutText = () => {
       </p>
 
       {/* Part 2 */}
-      <p className="text-base-200 m-6 text-base md:text-lg leading-relaxed">
+      <p className="text-base-200 mx-1 sm:mx-2 md:mx-4 lg:mx-6 text-base md:text-lg leading-relaxed">
         <Trans
           i18nKey="about.part2"
           components={{

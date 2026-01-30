@@ -19,7 +19,7 @@ const ExperienceText = () => {
       </h1>
 
       {/* Part 1 */}
-      <p className="text-base-200 mx-6 text-base 2xl:text-lg leading-relaxed">
+      <p className="text-base-200 mx-1 sm:mx-2 md:mx-4 lg:mx-6 text-base 2xl:text-lg leading-relaxed">
         <Trans
           i18nKey="experience.part1"
           components={{
@@ -40,7 +40,7 @@ const ExperienceText = () => {
       </p>
 
       {/* Part 2 */}
-      <p className="text-base-200 mx-6 my-8 text-base md:text-lg leading-relaxed">
+      <p className="text-base-200 mx-1 sm:mx-2 md:mx-4 lg:mx-6 my-8 text-base md:text-lg leading-relaxed">
         <Trans
           i18nKey="experience.part2"
           components={{
